@@ -1,0 +1,99 @@
+//---------------------------------------
+//  Latest News
+//---------------------------------------
+
+// Title Section ------------------------
+.title {
+  background-color: white;
+  filter: drop-shadow(0 .5rem .4rem rgba(0,0,0,0.05));
+}
+
+.title h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: $primary-color;
+  border-bottom: 5px solid $primary-color;
+  margin: 0 15px;
+  padding: 40px 0;
+  width: 71px;
+  letter-spacing: 0.4px
+}
+
+// Main Section ------------------------
+.latest {
+  background-color: $primary-background-color;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+// Card Styles ------------------------
+.latest-card {
+  margin: 15px;
+  background-color: white;
+  border: 1px solid $primary-border-color;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+// Top Section ------------------------
+.card-image-1 {
+  width: 100%;
+}
+
+.latest-card .content,
+.latest-card .details {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: $secondary-color;
+}
+
+.latest-card .content {
+  padding: 30px 30px 0 30px;
+}
+
+.latest-card a {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.latest-card p {
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+// Bottom Section ------------------------
+.latest-card .line-break {
+  display: flex;
+  margin: 20px 30px 0 30px;
+  width: auto;
+  border-top: 1px solid $primary-border-color;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.card-image-2 {
+  border-radius: 50%;
+  height: 47px;
+  width: 47px;
+  margin-right: 20px;
+}
+
+.details p {
+  margin: 0;
+  padding: 2px 0;
+}
+
+.details .name {
+  font-weight: 600;
+  color: $primary-color;
+}

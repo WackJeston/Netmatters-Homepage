@@ -1,0 +1,91 @@
+//---------------------------------------
+//  Slider
+//---------------------------------------
+
+.slider {
+  background-image: url("../imgs/web-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 20vh;
+}
+
+// Slider overlay containg info ----------------------------
+
+.overlay {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7), black 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+.overlay p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 25px 20px;
+  max-width: 400px
+}
+
+// Find Out More Button ----------------------------
+
+.find-out-more {
+  line-height: 50px;
+  height: auto;
+  padding: 5px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  background-color: $web-design;
+  border: none;
+  border-radius: 3px;
+}
+
+.find-out-more:hover {
+  background-color: $web-design-hover;
+}
+
+.find-out-more .arrow {
+  padding-left: 10px;
+}
+
+// Line of dots indicating which slide user is on ----------------------------
+
+.dot-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  top: 90%;
+}
+
+.dot {
+  width: 8px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  opacity: 0.6;
+  margin: 5px 9px;
+}
+
+.dot:hover {
+  opacity: .4;
+}

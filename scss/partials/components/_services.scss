@@ -1,0 +1,198 @@
+//---------------------------------------
+//  Services
+//-----------------------------------------
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+  background-color: $primary-background-color;
+}
+
+.services {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+  margin: 15px;
+  background-color: white;
+  border: solid 1px $primary-border-color;
+  border-radius: 3px;
+  color: $primary-color;
+  filter: drop-shadow(0 0 0.4rem rgba(0,0,0,0.1));
+}
+
+.services h2 {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.services p {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.line {
+  background-color: $primary-color;
+  width: 30px;
+  height: 3.5px;
+  margin: 5px 0;
+}
+
+
+// Bespoke Software ----------------------------
+
+.bespoke-software .icon,
+.bespoke-software .read-more {
+  background-color: $bespoke-software;
+}
+
+.bespoke-software:hover .icon,
+.bespoke-software:hover .read-more,
+.bespoke-software:hover .line {
+  background-color: white;
+  color: $bespoke-software;
+}
+
+.bespoke-software:hover {
+  background-color: $bespoke-software;
+  color: white;
+}
+
+
+// IT Support ----------------------------
+
+.it-support .icon,
+.it-support .read-more {
+  background-color: $it-support;
+}
+
+.it-support:hover .icon,
+.it-support:hover .read-more,
+.it-support:hover .line {
+  background-color: white;
+  color: $it-support;
+}
+
+.it-support:hover {
+  background-color: $it-support;
+  color: white;
+}
+
+
+// Digital Marketing ----------------------------
+
+.digital-marketing .icon,
+.digital-marketing .read-more {
+  background-color: $digital-marketing;
+}
+
+.digital-marketing:hover .icon,
+.digital-marketing:hover .read-more,
+.digital-marketing:hover .line {
+  background-color: white;
+  color: $digital-marketing;
+}
+
+.digital-marketing:hover {
+  background-color: $digital-marketing;
+  color: white;
+}
+
+
+// Telecoms Services ----------------------------
+
+.telecoms-services .icon,
+.telecoms-services .read-more {
+  background-color: $telecoms-services;
+}
+
+.telecoms-services:hover .icon,
+.telecoms-services:hover .read-more,
+.telecoms-services:hover .line {
+  background-color: white;
+  color: $telecoms-services;
+}
+
+.telecoms-services:hover {
+  background-color: $telecoms-services;
+  color: white;
+}
+
+
+// Web Design ----------------------------
+
+.web-design .icon,
+.web-design .read-more {
+  background-color: $web-design;
+}
+
+.web-design:hover .icon,
+.web-design:hover .read-more,
+.web-design:hover .line {
+  background-color: white;
+  color: $web-design;
+}
+
+.web-design:hover {
+  background-color: $web-design;
+  color: white;
+}
+
+
+// Cyber Security ----------------------------
+
+.cyber-security .icon,
+.cyber-security .read-more {
+  background-color: $cyber-security;
+}
+
+.cyber-security:hover .icon,
+.cyber-security:hover .read-more,
+.cyber-security:hover .line {
+  background-color: white;
+  color: $cyber-security;
+}
+
+.cyber-security:hover {
+  background-color: $cyber-security;
+  color: white;
+}
+
+
+// Developer Training ----------------------------
+
+.developer-training .icon,
+.developer-training .read-more {
+  background-color: $developer-training;
+}
+
+.developer-training:hover .icon,
+.developer-training:hover .read-more,
+.developer-training:hover .line {
+  background-color: white;
+  color: $developer-training;
+}
+
+.developer-training:hover {
+  background-color: $developer-training;
+  color: white;
+}

@@ -1,0 +1,17 @@
+//---------------------------------------
+//  Imports
+//---------------------------------------
+
+
+// Utilities ----------------------------
+@import 'partials/utilities/variables';
+@import 'partials/utilities/base';
+@import "partials/utilities/mediaqueries";
+
+
+// Components ---------------------------
+@import 'partials/components/header';
+@import 'partials/components/slider';
+@import 'partials/components/services';
+@import 'partials/components/info';
+@import 'partials/components/latest';
