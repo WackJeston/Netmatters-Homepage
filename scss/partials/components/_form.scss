@@ -1,0 +1,91 @@
+//---------------------------------------
+//  Sign Up Form
+//---------------------------------------
+
+.form {
+  padding: 45px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-background-color;
+  color: $primary-color;
+  font-family: 'Poppins', sans-serif;
+}
+
+// Heading ------------------------------
+.form h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+// Inputs ------------------------------
+.form label,
+.form p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form input {
+  border: 1px solid $primary-border-color;
+  border-radius: 3px;
+  height: 45px;
+  margin: 3px 0 10px 0;
+}
+
+.form input:focus {
+  outline: none;
+  border: 1px solid #87CEEB;
+  filter: drop-shadow(0 0 .3rem lightblue);
+}
+
+// Checkbox and Privacy Policy ------------------------------
+.priv-policy {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.priv-policy p {
+  margin-left: 20px;
+  line-height: 32px;
+}
+
+.priv-policy a {
+  color: $primary-color;
+}
+
+.priv-policy a:hover {
+  color: $primary-color-hover;
+}
+
+.priv-policy button {
+  border: 3px solid $primary-color;
+  border-radius: 3px;
+  background-color: transparent;
+  height: 32px;
+  min-width: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.priv-policy button:focus {
+  background-color: $primary-color;
+}
+
+.tick {
+  color: transparent;
+}
+
+button:focus .tick {
+  color: white;
+}
+
+// Subscribe button ------------------------------
+.subscribe {
+  align-self: flex-start;
+  background-color: $primary-color;
+}
+
+.subscribe:hover {
+  background-color: $primary-color-hover;
+}
