@@ -22,9 +22,9 @@
 
 // Main Section ------------------------
 .latest {
-  background-color: $primary-background-color;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  background-color: $primary-background-color;
   width: 100%;
   padding: 30px 0;
 }
@@ -96,4 +96,42 @@
 .details .name {
   font-weight: 600;
   color: $primary-color;
+}
+
+// Colors ---------------------------------------
+
+.careers a {
+  color: $careers;
+}
+
+.careers button {
+  background-color: $careers;
+}
+
+.careers button:hover {
+  background-color: $careers-hover;
+}
+
+.news-1 a {
+  color: $news-1;
+}
+
+.news-1 button {
+  background-color: $news-1;
+}
+
+.news-1 button:hover {
+  background-color: $news-1-hover;
+}
+
+.news-2 a {
+  color: $news-2;
+}
+
+.news-2 button {
+  background-color: $news-2;
+}
+
+.news-2 button:hover {
+  background-color: $news-2-hover;
 }
