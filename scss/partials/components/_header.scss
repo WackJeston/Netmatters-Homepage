@@ -3,7 +3,7 @@
 //---------------------------------------
 
 header {
-  padding: 25px 32px 20px 15px;
+  padding: 20px 32px 20px 15px;
   position: fixed;
   background-color: white;
   width: 100vw;
@@ -16,6 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
+  min-height: 85px;
   padding-bottom: 15px;
 }
 
@@ -23,12 +24,15 @@ header {
 
 .logo {
   margin-right: 35px;
+  max-width: 345px;
 }
 
 .phone {
+  position: sticky;
   margin: 0 30px 0 auto;
   padding: 5px 0;
   color: $primary-color;
+  display: flex;
 }
 
 .phone:hover {
@@ -66,7 +70,8 @@ header {
   margin: 1px 0 0 0;
 }
 
-// Search bar --------------------------
+
+// Mobile Search bar --------------------------
 
 .nav-bot {
   display: flex;
@@ -92,6 +97,44 @@ header {
 }
 
 
+// Tablet Search bar --------------------------
+
+.tab-search {
+  display: none;
+  position: sticky;
+  margin: 0 30px 0 auto;
+  height: 60px;
+  border: none;
+}
+
+.tab-search button {
+  background-color: #999aa2;
+  border: 1px solid #999aa2;
+  border-radius: 0 3px 3px 0;
+}
+
+.tab-search button:hover {
+  background-color: #7e808a;
+}
+
+.tab-search button .search {
+  color: white;
+}
+
+.tab-search input {
+  border: 1px solid #999aa2;
+  padding-left: 15px;
+  width: 190px;
+  box-shadow: inset 0 0 2px 1px $input;
+}
+
+.tab-search input:focus {
+  outline: none;
+  border: 1px solid #87CEEB;
+  filter: drop-shadow(0 0 .3rem lightblue);
+}
+
+
 
 //---------------------------------------
 //  Media Queries
@@ -100,17 +143,17 @@ header {
 // Mobiles ------------------------------
 @media (max-width:600px) {
   .logo {
-    width: 300px;
+    width: 10px;
+    flex-grow: 1;
   }
 }
 
 
 // Tablets ------------------------------
 
-@media (min-width:601px) {
-  .logo {
-    width: 400px;
-  }
+@media (max-width:767px)
+and (min-width:601px) {
+
 }
 
 
@@ -118,11 +161,28 @@ header {
 
 @media (max-width:991px)
 and (min-width:768px) {
+  .tab-search {
+    display: flex;
+  }
+}
 
+@media (min-width:768px) {
+  .nav-top .phone {
+    display: none;
+  }
 }
 
 
 // Desktops ------------------------------
 
+@media (max-width:1260px)
+and (min-width:992px) {
+
+}
+
 
 // ExtraLarge ------------------------------
+
+@media (min-width:1261px) {
+
+}

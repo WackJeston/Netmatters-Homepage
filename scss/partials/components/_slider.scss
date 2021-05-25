@@ -67,16 +67,13 @@
 
 // Line of dots indicating which slide user is on ----------------------------
 .dot-line {
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 90%;
+  position: relative;
+  top: 120px;
 }
 
 .dot {
-  width: 8px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: none;
   background-color: white;
