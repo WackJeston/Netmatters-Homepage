@@ -66,12 +66,10 @@
 }
 
 // Line of dots indicating which slide user is on ----------------------------
-
 .dot-line {
+  height: 200px;
   display: flex;
   flex-direction: row;
-  align-self: center;
-  justify-content: center;
   position: absolute;
   top: 90%;
 }
@@ -83,7 +81,7 @@
   border: none;
   background-color: white;
   opacity: 0.6;
-  margin: 5px 9px;
+  margin: 0 9px;
 }
 
 .dot:hover {
