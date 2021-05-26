@@ -3,7 +3,7 @@
 //---------------------------------------
 
 header {
-  padding: 15px 32px 15px 15px;
+  padding: 10px 32px 10px 15px;
   position: fixed;
   background-color: white;
   width: 100vw;
@@ -13,7 +13,6 @@ header {
 
 .nav-top {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   max-width: 100%;
   min-height: 85px;
@@ -176,7 +175,7 @@ header {
 // Mobiles ------------------------------
 @media (max-width:600px) {
   .logo {
-    width: 10px;
+    width: 250px;
     flex-grow: 1;
   }
 }
@@ -186,9 +185,13 @@ header {
 
 @media (max-width:767px)
 and (min-width:601px) {
-
 }
 
+@media (max-width:767px) {
+  header {
+    padding-bottom: 15px;
+  }
+}
 
 // Laptops ------------------------------
 
