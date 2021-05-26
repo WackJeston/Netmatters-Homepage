@@ -3,7 +3,7 @@
 //---------------------------------------
 
 header {
-  padding: 10px 32px 10px 15px;
+  padding: 10px 17px 0 0;
   position: fixed;
   background-color: white;
   width: 100vw;
@@ -16,6 +16,8 @@ header {
   align-items: center;
   max-width: 100%;
   min-height: 85px;
+  margin: 0 15px;
+  padding-bottom: 10px;
 }
 
 // Logo and phone icon -------------------
@@ -79,6 +81,7 @@ header {
   background-color: $input;
   border: 2px solid $input;
   border-radius: 2px;
+  margin: 0 15px;
 }
 
 .nav-bot input {
@@ -123,7 +126,7 @@ header {
 
 .tab-search input {
   display: flex;
-  border: 1px solid #999aa2;
+  border: 1px solid $primary-border-color;
   padding-left: 15px;
   width: 190px;
   box-shadow: inset 0 0 2px 1px $input;
@@ -167,6 +170,71 @@ header {
   background-color: $contact-hover;
 }
 
+// Navigation Large Menu --------------------------
+
+.nav-large {
+  display: flex;
+  background-color: #333645;
+  padding: 0 50px;
+}
+
+.menu-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 5px;
+  border-left: 1px solid $primary-border-color;
+}
+
+.nav-security {
+  border-right: 1px solid $primary-border-color;
+}
+
+.menu-item h6,
+.menu-item a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+}
+
+.menu-item h6 {
+  font-size: 10px;
+}
+
+.menu-item a {
+  font-size: 18px;
+}
+
+.menu-item i {
+  margin-bottom: 10px;
+}
+
+.nav-web i {
+  color: $web-design;
+}
+
+.nav-it i {
+  color: $it-support;
+}
+
+.nav-telecoms i {
+  color: $telecoms-services;
+}
+
+.nav-software i {
+  color: $bespoke-software;
+}
+
+.nav-marketing i {
+  color: $digital-marketing;
+}
+
+.nav-security i {
+  color: $cyber-security;
+}
+
 
 //---------------------------------------
 //  Media Queries
@@ -195,8 +263,11 @@ and (min-width:601px) {
 
 // Laptops ------------------------------
 
-@media (max-width:991px)
-and (min-width:768px) {
+@media (max-width:991px) {
+
+  .nav-large {
+    display: none;
+  }
 }
 
 @media (min-width:768px) {
