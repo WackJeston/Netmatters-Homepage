@@ -176,6 +176,7 @@ header {
   display: flex;
   background-color: #333645;
   padding: 0 50px;
+  margin-bottom: .5px;
 }
 
 .menu-item {
@@ -207,10 +208,15 @@ header {
   font-size: 18px;
 }
 
+.menu-item a:hover {
+  color: white;
+}
+
 .menu-item i {
   margin-bottom: 10px;
 }
 
+// colors ----
 .nav-web i {
   color: $web-design;
 }
@@ -233,6 +239,43 @@ header {
 
 .nav-security i {
   color: $cyber-security;
+}
+
+// hover colors ----
+.nav-web:hover,
+.nav-web:hover i {
+  background-color: $web-design;
+  color: white;
+}
+
+.nav-it:hover,
+.nav-it:hover i {
+  background-color: $it-support;
+  color: white;
+}
+
+.nav-telecoms:hover,
+.nav-telecoms:hover i {
+  background-color: $telecoms-services;
+  color: white;
+}
+
+.nav-software:hover,
+.nav-software:hover i {
+  background-color: $bespoke-software;
+  color: white;
+}
+
+.nav-marketing:hover,
+.nav-marketing:hover i {
+  background-color: $digital-marketing;
+  color: white;
+}
+
+.nav-security:hover,
+.nav-security:hover i {
+  background-color: $cyber-security;
+  color: white;
 }
 
 
