@@ -3,7 +3,7 @@
 //---------------------------------------
 
 header {
-  padding: 20px 32px 20px 15px;
+  padding: 15px 32px 15px 15px;
   position: fixed;
   background-color: white;
   width: 100vw;
@@ -13,11 +13,10 @@ header {
 
 .nav-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   max-width: 100%;
   min-height: 85px;
-  padding-bottom: 15px;
 }
 
 // Logo and phone icon -------------------
@@ -25,11 +24,12 @@ header {
 .logo {
   margin-right: 35px;
   max-width: 345px;
+  margin-right: auto;
 }
 
 .phone {
   position: sticky;
-  margin: 0 30px 0 auto;
+  margin: 0 30px 0 30px;
   padding: 5px 0;
   color: $primary-color;
   display: flex;
@@ -103,7 +103,7 @@ header {
 .tab-search {
   display: none;
   position: sticky;
-  margin: 0 30px 0 auto;
+  margin: 0 20px;
   height: 60px;
   border: none;
 }
@@ -123,6 +123,7 @@ header {
 }
 
 .tab-search input {
+  display: flex;
   border: 1px solid #999aa2;
   padding-left: 15px;
   width: 190px;
@@ -135,6 +136,37 @@ header {
   filter: drop-shadow(0 0 .3rem lightblue);
 }
 
+
+// Desktop Buttons --------------------------
+
+.support,
+.contact {
+  height: 60px;
+  display: none;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.support i,
+.contact i {
+  margin-right: 10px;
+}
+
+.support {
+  background-color: $support;
+}
+
+.support:hover {
+  background-color: $support-hover;
+}
+
+.contact {
+  background-color: $contact;
+}
+
+.contact:hover {
+  background-color: $contact-hover;
+}
 
 
 //---------------------------------------
@@ -162,10 +194,6 @@ and (min-width:601px) {
 
 @media (max-width:991px)
 and (min-width:768px) {
-
-  .tab-search {
-    display: flex;
-  }
 }
 
 @media (min-width:768px) {
@@ -177,6 +205,10 @@ and (min-width:768px) {
   .nav-bot {
     display: none;
   }
+
+  .tab-search {
+    display: flex;
+  }
 }
 
 
@@ -185,6 +217,38 @@ and (min-width:768px) {
 @media (max-width:1260px)
 and (min-width:992px) {
 
+  .tab-search input {
+    display: none;
+  }
+
+  .tab-search:focus-within > input {
+    display: flex;
+  }
+
+
+  .tab-search button {
+    border-radius: 3px;
+  }
+
+  .tab-search:focus-within > button {
+    border-radius: 0 3px 3px 0;
+  }
+
+  .tab-search:focus-within .contact {
+    display: none;
+  }
+
+  .tab-search input {
+    width: 114px;
+  }
+}
+
+@media (min-width:992px) {
+
+  .support,
+  .contact {
+    display: flex;
+  }
 }
 
 
@@ -192,4 +256,7 @@ and (min-width:992px) {
 
 @media (min-width:1261px) {
 
+  .tab-search input {
+    width: 300px;
+  }
 }
