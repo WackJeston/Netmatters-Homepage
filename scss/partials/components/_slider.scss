@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 86%;
+  height: 88.5%;
   width: 100%;
   position: absolute;
-  top: 14vh;
+  top: 11.5vh;
 }
 
 // Slider overlay containg info ----------------------------
@@ -83,4 +83,43 @@
 
 .dot:hover {
   opacity: .4;
+}
+
+
+
+//---------------------------------------
+//  Media Queries
+//---------------------------------------
+
+// Mobiles and Tablets ------------------------------
+
+@media (max-width:767px) {
+
+  .slider {
+    top: 19vh;
+    height: 81%;
+  }
+}
+
+
+// Desktops & TVs ------------------------------
+
+@media (min-width:992px) {
+
+  .slider {
+    top: 24vh;
+    height: 76%;
+  }
+
+  .overlay h1,
+  .overlay p,
+  .overlay .find-out-more {
+    align-self: flex-start;
+    margin-left: 60px;
+  }
+
+  .overlay p {
+    text-align: left;
+    padding: 10px 1px;
+  }
 }
