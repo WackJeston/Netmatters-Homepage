@@ -6,7 +6,7 @@
 .info {
   background-color: $primary-color;
   color: white;
-  padding: 40px 15px;
+  padding: 40px 15px 50px 15px;
 }
 
 .info h1 {
@@ -46,4 +46,63 @@
 
 .info button .arrow {
   padding-left: 10px;
+}
+
+
+//---------------------------------------
+//  Media Queries
+//---------------------------------------
+
+// laptops ------------------------------
+
+@media (max-width:991px)
+and (min-width:768px) {
+
+  .info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-container {
+    width: 708px;
+    justify-content: center;
+  }
+}
+
+
+// Desktops ------------------------------
+
+@media (max-width:1260px)
+and (min-width:992px) {
+
+  .info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-container {
+    width: 932px;
+    justify-content: center;
+  }
+}
+
+@media (min-width:992px) {
+  .info {
+    background-image: url("../imgs/branded.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+// ExtraLarge ------------------------------
+
+@media (min-width:1261px) {
+
+  .info-container {
+    width: 570px;
+    justify-content: flex-start;
+    margin-left: 60px;
+  }
 }
