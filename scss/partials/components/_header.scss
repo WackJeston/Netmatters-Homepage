@@ -139,7 +139,7 @@ header {
 }
 
 
-// Desktop Buttons --------------------------
+// Support & Contact Buttons --------------------------
 
 .support,
 .contact {
@@ -170,6 +170,7 @@ header {
   background-color: $contact-hover;
 }
 
+
 // Navigation Large Menu --------------------------
 
 .nav-large {
@@ -184,7 +185,7 @@ header {
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
-  padding: 20px 5px;
+  padding: 22px 5px 15px 5px;
   border-left: 1px solid $primary-border-color;
 }
 
@@ -216,7 +217,9 @@ header {
   margin-bottom: 10px;
 }
 
-// colors ----
+
+// Large Nav colors ----------------------------
+
 .nav-web i {
   color: $web-design;
 }
@@ -241,7 +244,9 @@ header {
   color: $cyber-security;
 }
 
-// hover colors ----
+
+// Large Nav hover colors --------------------
+
 .nav-web:hover,
 .nav-web:hover i {
   background-color: $web-design;
@@ -277,6 +282,84 @@ header {
   background-color: $cyber-security;
   color: white;
 }
+
+
+// Sub Menus --------------------------
+
+.sub-menu {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  position: fixed;
+  left: 0;
+  top: 201px;
+  padding: 15px 60px;
+  width: 100vw;
+
+}
+
+.sub-menu a,
+.sub-menu p {
+  font-size: 13px;
+  margin: 0 10px;
+}
+
+
+// Sub Menu Colors --------------------------
+
+.sub-web {
+  background-color: $web-design-hover;
+}
+
+.sub-it {
+  background-color: $it-support-hover;
+}
+
+.sub-telecoms {
+  background-color: $telecoms-services-hover;
+}
+
+.sub-software {
+  background-color: $bespoke-software-hover;
+}
+
+.sub-marketing {
+  background-color: $digital-marketing-hover;
+}
+
+.sub-security {
+  background-color: $cyber-security-hover;
+}
+
+
+// Sub Menu Hover --------------------------
+
+.nav-web:hover .sub-web {
+  display: flex;
+}
+
+.nav-it:hover .sub-it {
+  display: flex;
+}
+
+.nav-telecoms:hover .sub-telecoms {
+  display: flex;
+}
+
+.nav-software:hover .sub-software {
+  display: flex;
+}
+
+.nav-marketing:hover .sub-marketing {
+  display: flex;
+}
+
+.nav-security:hover .sub-security {
+  display: flex;
+}
+
 
 
 //---------------------------------------
@@ -375,5 +458,11 @@ and (min-width:992px) {
 
   .tab-search input {
     width: 300px;
+  }
+
+  .sub-menu a,
+  .sub-menu p {
+    font-size: 16px;
+    margin: 0 15px;
   }
 }
