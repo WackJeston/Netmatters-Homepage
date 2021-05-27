@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 88.5%;
+  height: 89%;
   width: 100%;
   position: absolute;
-  top: 11.5vh;
+  top: 11vh;
 }
 
 // Slider overlay containg info ----------------------------
@@ -67,8 +67,11 @@
 
 // Line of dots indicating which slide user is on ----------------------------
 .dot-line {
+  display: flex;
+  align-items: center;
   position: relative;
   top: 120px;
+  transform: scale(.7);
 }
 
 .dot {
@@ -78,11 +81,32 @@
   border: none;
   background-color: white;
   opacity: 0.6;
-  margin: 0 9px;
+  margin: 0 15px;
 }
 
 .dot:hover {
   opacity: .4;
+}
+
+.active-dot {
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+}
+
+.active-dot-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  margin: 0 6px;
 }
 
 
@@ -96,8 +120,8 @@
 @media (max-width:767px) {
 
   .slider {
-    top: 19vh;
-    height: 81%;
+    top: 18vh;
+    height: 82%;
   }
 }
 
@@ -107,19 +131,19 @@
 @media (min-width:992px) {
 
   .slider {
-    top: 24vh;
-    height: 76%;
+    top: 23.5vh;
+    height: 76.5%;
   }
 
   .overlay h1,
   .overlay p,
   .overlay .find-out-more {
     align-self: flex-start;
-    margin-left: 60px;
+    margin-left: 70px;
   }
 
   .overlay p {
     text-align: left;
-    padding: 10px 1px;
+    padding: 15px 1px;
   }
 }
