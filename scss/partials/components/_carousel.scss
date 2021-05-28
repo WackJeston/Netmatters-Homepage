@@ -86,7 +86,7 @@
   display: flex;
 }
 
-.img-northern:hover + .northern-driver {
+.img-northern:hover + .northern {
   display: flex;
 }
 
@@ -136,7 +136,7 @@ and (min-width:768px) {
     top: -162.5px;
   }
 
-  .northern-driver {
+  .northern {
     top: -201.5px;
   }
 }
@@ -171,7 +171,7 @@ and (min-width:992px) {
     top: -162.5px;
   }
 
-  .northern-driver {
+  .northern {
     top: -182px;
   }
 }
@@ -201,7 +201,7 @@ and (min-width:992px) {
     top: -162.5px;
   }
 
-  .northern-driver {
+  .northern {
     top: -182px;
   }
 }
