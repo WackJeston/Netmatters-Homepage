@@ -10,9 +10,10 @@ $primary-color-hover: #22242e;
 
 $secondary-color: rgba(128,128,128,1);
 
-$primary-background-color: rgba(0,0,0,0.04);
-$secondary-background-color: rgba(0,0,0,0.1);
+$primary-background-color: rgba(0,0,0,0.03);
+$secondary-background-color: rgba(0,0,0,0.075);
 $background-color-3: rgba(0,0,0,0.3);
+$background-color-4: rgba(0,0,0,0.15);
 
 $primary-border-color: rgba(128,128,128,0.4);
 
@@ -63,6 +64,6 @@ $contact: #999aa2;
 $contact-hover: #84858f;
 
 
-// Header variables --------------------------------------
+// carousel variables --------------------------------------
 
-$extend-search: 0;
+$pop-up: 0;

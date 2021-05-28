@@ -1,0 +1,207 @@
+//---------------------------------------
+//  Carousel
+//---------------------------------------
+
+// Main -------------------------------
+
+.carousel {
+  display: none;
+  background-color: $secondary-background-color;
+  justify-content: center;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+}
+
+.carousel img {
+  height: 50px;
+  filter: grayscale(1);
+}
+
+.carousel img.grayscale {
+
+}
+
+.carousel img:hover {
+  filter: grayscale(0);
+}
+
+// Pop Ups -------------------------------
+
+.pop-up-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pop-up {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 300px;
+  background-color: $primary-color;
+  color: white;
+  padding: 30px 20px 20px 20px;
+}
+
+.pop-up h3 {
+  font-size: 18px;
+}
+
+.pop-up p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.pop-up .line {
+  background-color: white;
+  margin: 10px 0 15px 0;
+}
+
+.pointer {
+  position: absolute;
+  bottom: -25px;
+  background-color: $primary-color;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+}
+
+
+// Hover -------------------------------
+
+.img-busseys:hover + .busseys {
+  display: flex;
+}
+
+.img-crane:hover + .crane {
+  display: flex;
+}
+
+.img-beat:hover + .beat {
+  display: flex;
+}
+
+.img-northern:hover + .northern-driver {
+  display: flex;
+}
+
+
+
+
+//---------------------------------------
+//  Media Queries
+//---------------------------------------
+
+// Laptops ------------------------------
+
+@media (min-width:768px) {
+  .carousel {
+
+    display: flex;
+  }
+}
+
+@media (max-width:991px) {
+
+  .pop-up {
+    width: 250px;
+  }
+}
+
+@media (max-width:991px)
+and (min-width:768px) {
+
+  .carousel-container {
+    width: 750px;
+  }
+
+  .carousel img {
+    height: 50px;;
+  }
+
+  .busseys {
+    top: -162.5px;
+  }
+
+  .crane {
+    top: -201.5px;
+  }
+
+  .beat {
+    top: -162.5px;
+  }
+
+  .northern-driver {
+    top: -201.5px;
+  }
+}
+
+
+// Desktops ------------------------------
+
+@media (max-width:1260px)
+and (min-width:992px) {
+
+  .carousel-container {
+    width: 970px;
+  }
+
+  .carousel img {
+    height: 55px;
+  }
+
+  .pop-up {
+    width: 275px;
+  }
+
+  .busseys {
+    top: -162.5px;
+  }
+
+  .crane {
+    top: -201.5px;
+  }
+
+  .beat {
+    top: -162.5px;
+  }
+
+  .northern-driver {
+    top: -182px;
+  }
+}
+
+
+// Extra Large ------------------------------
+
+@media (min-width:1261px) {
+
+  .carousel-container {
+    width: 1200px;
+  }
+
+  .carousel img {
+    height: 60px;;
+  }
+
+  .busseys {
+    top: -143px;
+  }
+
+  .crane {
+    top: -182px;
+  }
+
+  .beat {
+    top: -162.5px;
+  }
+
+  .northern-driver {
+    top: -182px;
+  }
+}
