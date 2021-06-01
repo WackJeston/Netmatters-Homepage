@@ -7,6 +7,8 @@
   background-color: $primary-color;
   color: white;
   padding: 40px 15px 50px 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .info h1 {
@@ -101,8 +103,12 @@ and (min-width:992px) {
 @media (min-width:1261px) {
 
   .info-container {
-    width: 570px;
+    width: 1230px;
     justify-content: flex-start;
     margin-left: 60px;
+  }
+
+  .info p {
+    width: 555px;
   }
 }

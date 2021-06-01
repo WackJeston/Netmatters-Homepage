@@ -3,17 +3,28 @@
 //---------------------------------------
 
 footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: $primary-color;
   color: white;
-  padding: 30px 15px;
+  padding: 40px 15px 0 15px;
   font-family: 'Poppins', sans-serif;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 0 10px;
 }
 
 footer h4 {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 25px;
-
 }
 
 footer ul {
@@ -25,6 +36,10 @@ footer li {
   list-style: none;
   font-size: 13px;
   margin-bottom: 3px;
+}
+
+.phone-number {
+  margin-top: 40px;
 }
 
 footer a {
@@ -40,16 +55,28 @@ footer a:hover {
 .social-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 20px;
 }
 
 footer button {
-  width: 47.7%;
-  height: 50px;
+  display: flex;
+  flex-grow: 1;
+  min-width: 180px;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
   background-color: $background-color-3;
   border: none;
+}
+
+.social-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 25px;
 }
 
 .social-icon {
@@ -86,4 +113,63 @@ footer button {
 
 .linkedin:hover {
   background-color: #0077b5;
+}
+
+
+
+//---------------------------------------
+//  Media Queries
+//---------------------------------------
+
+// Tablets ------------------------------
+
+@media (max-width:767px)
+and (min-width:601px) {
+
+  footer button {
+    min-width: 230px;
+  }
+}
+
+// Laptops ------------------------------
+
+@media (max-width:991px)
+and (min-width:768px) {
+
+  .footer-section {
+    width: 340px;
+  }
+
+  footer button {
+    min-width: 150px;
+  }
+}
+
+
+// Desktops ------------------------------
+
+@media (max-width:1260px)
+and (min-width:992px) {
+
+  .footer-section {
+    width: 455px;
+  }
+
+  footer button {
+    min-width: 210px;
+  }
+}
+
+
+// Extra Large Screens ------------------------------
+
+@media (min-width:1261px) {
+
+  .footer-section {
+    width: 270px;
+  }
+
+  footer button {
+    min-width: 120px;
+  }
 }
