@@ -224,10 +224,7 @@ and (min-width:768px) {
   .services-section .cyber-security,
   .services-section .developer-training {
     width: 345px;
-  }
-
-  .services-section .developer-training {
-    padding: 20px 0;
+    height: 320px;
   }
 }
 
@@ -241,6 +238,7 @@ and (min-width:992px) {
   .services-section .it-support,
   .services-section .digital-marketing {
     width: 294px;
+    height: 360px;
   }
 
   .services-section .telecoms-services,
@@ -260,6 +258,7 @@ and (min-width:992px) {
   .services-section .it-support,
   .services-section .digital-marketing {
     width: 370px;
+    height: 340px;
   }
 
   .services-section .telecoms-services,
@@ -267,5 +266,6 @@ and (min-width:992px) {
   .services-section .cyber-security,
   .services-section .developer-training {
     width: 270px;
+    height: 340px;
   }
 }
