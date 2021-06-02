@@ -24,23 +24,103 @@
   margin-bottom: 30px;
 }
 
-.partners img,
-.awards img {
+.partners div,
+.awards div {
   height: 60px;
-  filter: grayscale(1) opacity(0.9);
+  width: 300px;
+  display: flex;
 }
 
-.partners img:hover,
-.awards img:hover {
-  filter: grayscale(0) opacity(1);
+.partners div {
+  height: 60px;
 }
 
-.partners .google {
-  filter: grayscale(0)  opacity(0.9) drop-shadow(3px 3px 2px lightgray);
+.awards div {
+  height: 45px;
 }
 
-.partners .google:hover {
-  filter: grayscale(0)  opacity(1) drop-shadow(3px 3px 2px lightgray);
+.google {
+  background-image: url("../imgs/partners-google.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.microsoft {
+  background-image: url("../imgs/partners-microsoft-gray.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.microsoft:hover {
+  background-image: url("../imgs/partners-microsoft.jpg");
+}
+
+.future-50 {
+  background-image: url("../imgs/partners-future50-gray.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.future-50:hover {
+  background-image: url("../imgs/partners-future50.jpg");
+}
+
+.qms {
+  background-image: url("../imgs/partners-qms-gray.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.qms:hover {
+  background-image: url("../imgs/partners-qms.jpg");
+}
+
+.norfolk {
+  background-image: url("../imgs/partners-norfolk-gray.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.norfolk:hover {
+  background-image: url("../imgs/partners-norfolk.jpg");
+}
+
+.future-growth {
+  background-image: url("../imgs/awards-future-growth-gray.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.future-growth:hover {
+  background-image: url("../imgs/awards-future-growth.jpg");
+}
+
+.royal-training {
+  background-image: url("../imgs/awards-royal-training-gray.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.royal-training:hover {
+  background-image: url("../imgs/awards-royal-training.jpg");
+}
+
+.skills-tomorrow {
+  background-image: url("../imgs/awards-skills-tomorrow-gray.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.skills-tomorrow:hover {
+  background-image: url("../imgs/awards-skills-tomorrow.jpg");
 }
 
 
@@ -76,9 +156,12 @@ and (min-width:992px) {
     width: 880px;
   }
 
-  .partners img,
-  .awards img {
+  .partners div {
     height: 65px;
+  }
+
+  .awards div {
+    height: 50px;
   }
 }
 
@@ -91,8 +174,11 @@ and (min-width:992px) {
     width: 1055px;
   }
 
-  .partners img,
-  .awards img {
+  .partners div {
     height: 75px;
+  }
+
+  .awards div {
+    height: 55px;
   }
 }
