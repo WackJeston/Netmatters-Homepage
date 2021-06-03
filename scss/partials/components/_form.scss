@@ -45,7 +45,7 @@
 .form input:focus {
   outline: none;
   border: 1px solid #87CEEB;
-  filter: drop-shadow(0 0 .3rem lightblue);
+  box-shadow: 0 0 0.3rem 0.1rem lightblue;
 }
 
 
@@ -75,6 +75,7 @@
   background-color: transparent;
   height: 32px;
   min-width: 32px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
