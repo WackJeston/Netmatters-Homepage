@@ -81,8 +81,6 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: -50%;
-  transform: translate(-50% -0%);
   width: 300px;
   background-color: $primary-color;
   color: white;
@@ -165,22 +163,22 @@ and (min-width:768px) {
   .carousel img {
     height: 50px;;
   }
-  //
-  // .busseys {
-  //   top: -162.5px;
-  // }
-  //
-  // .crane {
-  //   top: -201.5px;
-  // }
-  //
-  // .beat {
-  //   top: -162.5px;
-  // }
-  //
-  // .northern {
-  //   top: -201.5px;
-  // }
+
+  .busseys {
+    top: -162.5px;
+  }
+
+  .crane {
+    top: -201.5px;
+  }
+
+  .beat {
+    top: -162.5px;
+  }
+
+  .northern {
+    top: -201.5px;
+  }
 }
 
 
@@ -209,22 +207,22 @@ and (min-width:992px) {
   .pop-up {
     width: 275px;
   }
-  //
-  // .busseys {
-  //   top: -162.5px;
-  // }
-  //
-  // .crane {
-  //   top: -201.5px;
-  // }
-  //
-  // .beat {
-  //   top: -162.5px;
-  // }
-  //
-  // .northern {
-  //   top: -182px;
-  // }
+
+  .busseys {
+    top: -162.5px;
+  }
+
+  .crane {
+    top: -201.5px;
+  }
+
+  .beat {
+    top: -162.5px;
+  }
+
+  .northern {
+    top: -182px;
+  }
 }
 
 
@@ -249,19 +247,19 @@ and (min-width:992px) {
     width: 70px;
   }
 
-  // .busseys {
-  //   top: -143px;
-  // }
-  //
-  // .crane {
-  //   top: -182px;
-  // }
-  //
-  // .beat {
-  //   top: -162.5px;
-  // }
-  //
-  // .northern {
-  //   top: -182px;
-  // }
+  .busseys {
+    top: -143px;
+  }
+
+  .crane {
+    top: -182px;
+  }
+
+  .beat {
+    top: -162.5px;
+  }
+
+  .northern {
+    top: -182px;
+  }
 }
