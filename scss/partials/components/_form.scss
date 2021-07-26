@@ -8,12 +8,12 @@
   flex-direction: column;
   color: $primary-color;
   font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
 
 .form-container {
   display: flex;
   background-color: $background-color-4;
-  width: 100%;
 }
 
 // Heading ------------------------------
@@ -29,20 +29,26 @@
   flex-direction: column;
 }
 
-.form label,
+.form-input-section label,
 .form p {
   font-size: 16px;
   font-weight: 600;
 }
 
-.form input {
+.star {
+  color: $news-2;
+  margin-left: 3px;
+}
+
+.form-input-section input {
   border: 1px solid $primary-border-color;
   border-radius: 3px;
   height: 45px;
   margin: 3px 0 10px 0;
+  padding: 0 10px;
 }
 
-.form input:focus {
+.form-input-section input:focus {
   outline: none;
   border: 1px solid #87CEEB;
   box-shadow: 0 0 0.3rem 0.1rem lightblue;
@@ -53,7 +59,7 @@
 .priv-policy {
   display: flex;
   flex-direction: row;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .priv-policy p {
@@ -69,28 +75,29 @@
   color: $primary-color-hover;
 }
 
-.priv-policy button {
+.priv-policy input {
+  -webkit-appearance: none;
   border: 3px solid $primary-color;
+  color: white;
   border-radius: 3px;
-  background-color: transparent;
   height: 32px;
   min-width: 32px;
+  max-width: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.priv-policy button:focus {
+.priv-policy input:after {
+  padding: 4px 7px;
+  content: '';
+}
+
+.priv-policy input:checked:after {
   background-color: $primary-color;
+  content: '✔';
 }
 
-.tick {
-  color: transparent;
-}
-
-button:focus .tick {
-  color: white;
-}
 
 // Subscribe button ------------------------------
 .subscribe {

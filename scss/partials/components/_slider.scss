@@ -7,10 +7,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 89%;
   width: 100%;
-  position: absolute;
-  top: 11vh;
+  z-index: -1;
 }
 
 // Slider overlay containg info ----------------------------
@@ -21,8 +19,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
+}
+
+.slider-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
 }
 
 .overlay h1 {
@@ -34,12 +40,13 @@
 }
 
 .overlay p {
+  display: flex;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
   padding: 25px 20px;
-  max-width: 400px
+  max-width: 400px;
 }
 
 // Find Out More Button ----------------------------
@@ -69,8 +76,7 @@
 .dot-line {
   display: flex;
   align-items: center;
-  position: relative;
-  top: 120px;
+  margin-bottom: 5vh;
   transform: scale(.7);
 }
 
@@ -120,8 +126,32 @@
 @media (max-width:767px) {
 
   .slider {
-    top: 18vh;
-    height: 82%;
+    top: 19vh;
+    height: 81vh;
+  }
+}
+
+@media (min-width:768px) {
+  .slider-title-container {
+    align-items: flex-start;
+  }
+  .slider-title-container p {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px)
+and (max-width:992px) {
+
+  .slider {
+    top: 11vh;
+    height: 89vh;
+  }
+
+  .slider-title-container {
+    width: 720px;
   }
 }
 
@@ -132,18 +162,29 @@
 
   .slider {
     top: 23.5vh;
-    height: 76.5%;
-  }
-
-  .overlay h1,
-  .overlay p,
-  .overlay .find-out-more {
-    align-self: flex-start;
-    margin-left: 70px;
+    height: 76.5vh;
   }
 
   .overlay p {
     text-align: left;
     padding: 15px 1px;
+  }
+}
+
+@media (max-width:1260px)
+and (min-width:992px) {
+
+  .slider-title-container {
+    width: 940px;
+  }
+}
+
+
+// ExtraLarge ------------------------------
+
+@media (min-width:1261px) {
+
+  .slider-title-container {
+    width: 1170px;
   }
 }

@@ -27,6 +27,10 @@ footer h4 {
   margin-bottom: 25px;
 }
 
+.social-title {
+  margin-bottom: 15px;
+}
+
 footer ul {
   padding-left: 0;
   margin-bottom: 35px;
@@ -42,6 +46,10 @@ footer li {
   margin-top: 40px;
 }
 
+.filler {
+  color: $primary-color;
+}
+
 footer a {
   color: white;
   text-decoration: none;
@@ -49,7 +57,7 @@ footer a {
 
 footer a:hover {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .social-container {
@@ -63,7 +71,7 @@ footer a:hover {
 footer button {
   display: flex;
   flex-grow: 1;
-  min-width: 180px;
+  min-width: 170px;
   align-items: center;
   justify-content: center;
   height: 55px;
@@ -75,7 +83,7 @@ footer button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
+  width: 70px;
   height: 25px;
 }
 
@@ -84,7 +92,7 @@ footer button {
 }
 
 .facebook {
-  margin: 10px 10px 10px 0;
+  margin: 15px 15px 15px 0;
 }
 
 .facebook:hover {
@@ -92,7 +100,7 @@ footer button {
 }
 
 .twitter {
-  margin: 10px 0 10px 10px;
+  margin: 15px 0 15px 15px;
 }
 
 .twitter:hover {
@@ -100,7 +108,7 @@ footer button {
 }
 
 .insta {
-  margin: 10px 10px 10px 0;
+  margin: 15px 15px 15px 0;
 }
 
 .insta:hover {
@@ -108,7 +116,7 @@ footer button {
 }
 
 .linkedin {
-  margin: 10px 0 10px 10px;
+  margin: 15px 0 15px 15px;
 }
 
 .linkedin:hover {
@@ -120,6 +128,14 @@ footer button {
 //---------------------------------------
 //  Media Queries
 //---------------------------------------
+
+
+@media (max-width:420px) {
+
+  footer button {
+    min-width: 110px;
+  }
+}
 
 // Tablets ------------------------------
 
@@ -160,6 +176,12 @@ and (min-width:992px) {
   }
 }
 
+@media (max-width:1260px) {
+
+  .filler {
+    display: none;
+  }
+}
 
 // Extra Large Screens ------------------------------
 
