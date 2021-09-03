@@ -68,7 +68,7 @@ footer a:hover {
   padding-bottom: 20px;
 }
 
-footer button {
+footer .social {
   display: flex;
   flex-grow: 1;
   min-width: 170px;
@@ -132,7 +132,7 @@ footer button {
 
 @media (max-width:420px) {
 
-  footer button {
+  footer .social {
     min-width: 110px;
   }
 }
@@ -142,7 +142,7 @@ footer button {
 @media (max-width:767px)
 and (min-width:601px) {
 
-  footer button {
+  footer .social {
     min-width: 230px;
   }
 }
@@ -156,7 +156,7 @@ and (min-width:768px) {
     width: 340px;
   }
 
-  footer button {
+  footer .social {
     min-width: 150px;
   }
 }
@@ -171,7 +171,7 @@ and (min-width:992px) {
     width: 455px;
   }
 
-  footer button {
+  footer .social {
     min-width: 210px;
   }
 }
@@ -191,7 +191,7 @@ and (min-width:992px) {
     width: 270px;
   }
 
-  footer button {
+  footer .social {
     min-width: 120px;
   }
 }
