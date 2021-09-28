@@ -257,7 +257,7 @@ header {
   margin-bottom: 1px;
   font-family: "Poppins", sans-serif;
   border-right: 1.4px solid #22242e;
-  border-left: 1px solid rgba(128, 128, 128, 0.3);
+  border-left: 1.4px solid rgba(128, 128, 128, 0.3);
 }
 
 .item-container {
