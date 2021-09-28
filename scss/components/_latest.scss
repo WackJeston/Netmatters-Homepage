@@ -2,6 +2,8 @@
 //  Latest News
 //---------------------------------------
 
+@use "utilities/variables";
+
 // Title Section ------------------------
 .title {
   background-color: white;
@@ -12,8 +14,8 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 20px;
-  color: $primary-color;
-  border-bottom: 5px solid $primary-color;
+  color: variables.$primary-color;
+  border-bottom: 5px solid variables.$primary-color;
   margin: 0 15px;
   padding: 40px 0;
   width: 71px;
@@ -34,7 +36,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  background-color: $primary-background-color;
+  background-color: variables.$primary-background-color;
   width: 100%;
   padding: 30px 0;
 }
@@ -119,7 +121,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 13px;
-  color: $secondary-color;
+  color: variables.$secondary-color;
 }
 
 .latest-card .content {
@@ -152,7 +154,7 @@
   display: flex;
   margin: auto 30px 0 30px;
   width: auto;
-  border-top: 1px solid $primary-border-color;
+  border-top: 1px solid variables.$primary-border-color;
 }
 
 .author {
@@ -175,69 +177,69 @@
 
 .details .name {
   font-weight: 600;
-  color: $primary-color;
+  color: variables.$primary-color;
 }
 
 // Colors ---------------------------------------
 
 .careers a {
-  color: $careers;
+  color: variables.$careers;
 }
 
 .careers a:hover {
-  color: $careers-hover
+  color: variables.$careers-hover
 }
 
 .careers button {
-  background-color: $careers;
+  background-color: variables.$careers;
 }
 
 .careers button:hover {
-  background-color: $careers-hover;
+  background-color: variables.$careers-hover;
 }
 
 .news-1 a {
-  color: $news-1;
+  color: variables.$news-1;
 }
 
 .news-1 a:hover {
-  color: $news-1-hover;
+  color: variables.$news-1-hover;
 }
 
 .news-1 button {
-  background-color: $news-1;
+  background-color: variables.$news-1;
 }
 
 .news-1 button:hover {
-  background-color: $news-1-hover;
+  background-color: variables.$news-1-hover;
 }
 
 .news-2 a {
-  color: $news-2;
+  color: variables.$news-2;
 }
 
 .news-2 a:hover {
-  color: $news-2-hover;
+  color: variables.$news-2-hover;
 }
 
 .news-2 button {
-  background-color: $news-2;
+  background-color: variables.$news-2;
 }
 
 .news-2 button:hover {
-  background-color: $news-2-hover;
+  background-color: variables.$news-2-hover;
 }
 
 .careers .sticker {
-  background-color: $careers;
+  background-color: variables.$careers;
 }
 
 .news-1 .sticker {
-  background-color: $news-1;
+  background-color: variables.$news-1;
 }
 
 .news-2 .sticker {
-  background-color: $news-2;
+  background-color: variables.$news-2;
 }
 
 

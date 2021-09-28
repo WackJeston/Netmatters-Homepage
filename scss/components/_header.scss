@@ -2,6 +2,8 @@
 //  Header
 //---------------------------------------
 
+@use "utilities/variables";
+
 header {
   display: flex;
   flex-direction: column;
@@ -37,13 +39,13 @@ header {
   position: sticky;
   margin: 0 30px 0 30px;
   padding: 5px 0;
-  color: $primary-color;
+  color: variables.$primary-color;
   display: flex;
 }
 
 .phone:hover {
-  color: $primary-color-hover;
-  border-bottom: solid 3px $primary-color-hover;
+  color: variables.$primary-color-hover;
+  border-bottom: solid 3px variables.$primary-color-hover;
 }
 
 // Menu button --------------------------
@@ -53,7 +55,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $primary-color;
+  background-color: variables.$primary-color;
   color: white;
   width: 65px;
   font-size: .75rem;
@@ -63,7 +65,7 @@ header {
 }
 
 .menu-but:hover {
-  background-color: $primary-color-hover;
+  background-color: variables.$primary-color-hover;
 }
 
 .hamburger {
@@ -84,8 +86,8 @@ header {
   display: flex;
   width: 100%;
   height: 45px;
-  background-color: $input;
-  border: 2px solid $input;
+  background-color: variables.$input;
+  border: 2px solid variables.$input;
   border-radius: 2px;
   margin: 0 15px;
 }
@@ -101,7 +103,7 @@ header {
 .search {
   align-self: center;
   padding-bottom: 3px;
-  color: $primary-color;
+  color: variables.$primary-color;
 }
 
 
@@ -133,10 +135,10 @@ header {
 
 .tab-search input {
   display: flex;
-  border: 1px solid $primary-border-color;
+  border: 1px solid variables.$primary-border-color;
   padding-left: 15px;
   width: 190px;
-  box-shadow: inset 0 0 2px 1px $input;
+  box-shadow: inset 0 0 2px 1px variables.$input;
 }
 
 .tab-search input:focus {
@@ -162,19 +164,19 @@ header {
 }
 
 .support {
-  background-color: $support;
+  background-color: variables.$support;
 }
 
 .support:hover {
-  background-color: $support-hover;
+  background-color: variables.$support-hover;
 }
 
 .contact {
-  background-color: $contact;
+  background-color: variables.$contact;
 }
 
 .contact:hover {
-  background-color: $contact-hover;
+  background-color: variables.$contact-hover;
 }
 
 
@@ -197,8 +199,8 @@ header {
   padding: 0;
   margin-bottom: 1px;
   font-family: 'Poppins', sans-serif;
-  border-right: 1px solid $primary-color-hover;
-  border-left: 1px solid $primary-border-color;
+  border-right: 1.4px solid variables.$primary-color-hover;
+  border-left: 1px solid variables.$primary-border-color;
 }
 
 .item-container {
@@ -215,8 +217,8 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 22px 0 15px 0;
-  border-right: 1px solid $primary-border-color;
-  border-left: 1px solid $primary-color-hover;
+  border-right: 1px solid variables.$primary-border-color;
+  border-left: 1px solid variables.$primary-color-hover;
   text-decoration: none;
 }
 
@@ -225,7 +227,7 @@ header {
 //   flex-grow: 1;
 //   width: 1px;
 //   height: 100%;
-//   background-color: $primary-border-color;
+//   background-color: variables.$primary-border-color;
 // }
 //
 // .nav-large-line-2 {
@@ -259,65 +261,65 @@ header {
 // Large Nav colors ----------------------------
 
 .nav-web i {
-  color: $web-design;
+  color: variables.$web-design;
 }
 
 .nav-it i {
-  color: $it-support;
+  color: variables.$it-support;
 }
 
 .nav-telecoms i {
-  color: $telecoms-services;
+  color: variables.$telecoms-services;
 }
 
 .nav-software i {
-  color: $bespoke-software;
+  color: variables.$bespoke-software;
 }
 
 .nav-marketing i {
-  color: $digital-marketing;
+  color: variables.$digital-marketing;
 }
 
 .nav-security i {
-  color: $cyber-security;
+  color: variables.$cyber-security;
 }
 
 
 // Large Nav hover colors --------------------
 
-.nav-web:hover,
-.nav-web:hover i {
-  background-color: $web-design;
+.web-container:hover .nav-web,
+.web-container:hover .nav-web i {
+  background-color: variables.$web-design;
   color: white;
 }
 
-.nav-it:hover,
-.nav-it:hover i {
-  background-color: $it-support;
+.it-container:hover .nav-it,
+.it-container:hover .nav-it i {
+  background-color: variables.$it-support;
   color: white;
 }
 
-.nav-telecoms:hover,
-.nav-telecoms:hover i {
-  background-color: $telecoms-services;
+.telecoms-container:hover .nav-telecoms,
+.telecoms-container:hover .nav-telecoms i {
+  background-color: variables.$telecoms-services;
   color: white;
 }
 
-.nav-software:hover,
-.nav-software:hover i {
-  background-color: $bespoke-software;
+.software-container:hover .nav-software,
+.software-container:hover .nav-software i {
+  background-color: variables.$bespoke-software;
   color: white;
 }
 
-.nav-marketing:hover,
-.nav-marketing:hover i {
-  background-color: $digital-marketing;
+.marketing-container:hover .nav-marketing,
+.marketing-container:hover .nav-marketing i {
+  background-color: variables.$digital-marketing;
   color: white;
 }
 
-.nav-security:hover,
-.nav-security:hover i {
-  background-color: $cyber-security;
+.security-container:hover .nav-security,
+.security-container:hover .nav-security i {
+  background-color: variables.$cyber-security;
   color: white;
 }
 
@@ -361,53 +363,32 @@ header {
 // Sub Menu Colors --------------------------
 
 .sub-web {
-  background-color: $web-design-hover;
+  background-color: variables.$web-design-hover;
 }
 
 .sub-it {
-  background-color: $it-support-hover;
+  background-color: variables.$it-support-hover;
 }
 
 .sub-telecoms {
-  background-color: $telecoms-services-hover;
+  background-color: variables.$telecoms-services-hover;
 }
 
 .sub-software {
-  background-color: $bespoke-software-hover;
+  background-color: variables.$bespoke-software-hover;
 }
 
 .sub-marketing {
-  background-color: $digital-marketing-hover;
+  background-color: variables.$digital-marketing-hover;
 }
 
 .sub-security {
-  background-color: $cyber-security-hover;
+  background-color: variables.$cyber-security-hover;
 }
 
 
 // Sub Menu Hover --------------------------
-
-.web-container:hover .sub-web {
-  display: flex;
-}
-
-.it-container:hover .sub-it {
-  display: flex;
-}
-
-.telecoms-container:hover .sub-telecoms {
-  display: flex;
-}
-
-.software-container:hover .sub-software {
-  display: flex;
-}
-
-.marketing-container:hover .sub-marketing {
-  display: flex;
-}
-
-.security-container:hover .sub-security {
+.item-container:hover .sub-menu {
   display: flex;
 }
 

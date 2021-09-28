@@ -2,9 +2,10 @@
 //  Info
 //--------------------------------------
 
+@use "utilities/variables";
 
 .info {
-  background-color: $primary-color;
+  background-color: variables.$primary-color;
   color: white;
   padding: 40px 15px 50px 15px;
   display: flex;
@@ -32,7 +33,7 @@
 
 .info button {
   background-color: white;
-  color: $primary-color;
+  color: variables.$primary-color;
   padding: 5px 15px;
   border: none;
   border-radius: 3px;

@@ -2,6 +2,8 @@
 //  Slider
 //---------------------------------------
 
+@use "utilities/variables";
+
 .slider {
   background-image: url("../imgs/web-design.jpg");
   background-repeat: no-repeat;
@@ -59,13 +61,13 @@
   font-size: 20px;
   font-weight: 400;
   color: white;
-  background-color: $web-design;
+  background-color: variables.$web-design;
   border: none;
   border-radius: 3px;
 }
 
 .find-out-more:hover {
-  background-color: $web-design-hover;
+  background-color: variables.$web-design-hover;
 }
 
 .find-out-more .arrow {
@@ -131,7 +133,19 @@
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:768px)
+and (max-width:992px) {
+
+  .slider {
+    top: 11vh;
+    height: 89vh;
+  }
+}
+
+
+// Desktops & TVs ------------------------------
+
+@media (min-width:992px) {
   .slider-title-container {
     align-items: flex-start;
   }
@@ -140,25 +154,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-@media (min-width:768px)
-and (max-width:992px) {
-
-  .slider {
-    top: 11vh;
-    height: 89vh;
-  }
-
-  .slider-title-container {
-    width: 720px;
-  }
-}
-
-
-// Desktops & TVs ------------------------------
-
-@media (min-width:992px) {
 
   .slider {
     top: 23.5vh;

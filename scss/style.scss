@@ -4,18 +4,17 @@
 
 
 // Utilities ----------------------------
-@import 'partials/utilities/variables';
-@import 'partials/utilities/base';
-@import "partials/utilities/mixins";
+@use "utilities/variables";
+@use "utilities/base";
 
 
 // Components ---------------------------
-@import 'partials/components/header';
-@import 'partials/components/slider';
-@import 'partials/components/services';
-@import 'partials/components/info';
-@import 'partials/components/latest';
-@import 'partials/components/carousel';
-@import 'partials/components/form';
-@import 'partials/components/footer';
-@import 'partials/components/partners-awards';
+@use "components/header";
+@use "components/slider";
+@use "components/services";
+@use "components/info";
+@use "components/latest";
+@use "components/carousel";
+@use "components/form";
+@use "components/footer";
+@use "components/partners-awards";

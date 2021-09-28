@@ -2,18 +2,20 @@
 //  Sign Up Form
 //---------------------------------------
 
+@use "utilities/variables";
+
 .form {
   padding: 45px;
   display: flex;
   flex-direction: column;
-  color: $primary-color;
+  color: variables.$primary-color;
   font-family: 'Poppins', sans-serif;
   width: 100%;
 }
 
 .form-container {
   display: flex;
-  background-color: $background-color-4;
+  background-color: variables.$background-color-4;
 }
 
 // Heading ------------------------------
@@ -36,12 +38,12 @@
 }
 
 .star {
-  color: $news-2;
+  color: variables.$news-2;
   margin-left: 3px;
 }
 
 .form-input-section input {
-  border: 1px solid $primary-border-color;
+  border: 1px solid variables.$primary-border-color;
   border-radius: 3px;
   height: 45px;
   margin: 3px 0 10px 0;
@@ -68,16 +70,16 @@
 }
 
 .priv-policy a {
-  color: $primary-color;
+  color: variables.$primary-color;
 }
 
 .priv-policy a:hover {
-  color: $primary-color-hover;
+  color: variables.$primary-color-hover;
 }
 
 .priv-policy input {
   -webkit-appearance: none;
-  border: 3px solid $primary-color;
+  border: 3px solid variables.$primary-color;
   color: white;
   border-radius: 3px;
   height: 32px;
@@ -94,7 +96,7 @@
 }
 
 .priv-policy input:checked:after {
-  background-color: $primary-color;
+  background-color: variables.$primary-color;
   content: '✔';
 }
 
@@ -102,11 +104,11 @@
 // Subscribe button ------------------------------
 .subscribe {
   align-self: flex-start;
-  background-color: $primary-color;
+  background-color: variables.$primary-color;
 }
 
 .subscribe:hover {
-  background-color: $primary-color-hover;
+  background-color: variables.$primary-color-hover;
 }
 
 
