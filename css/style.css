@@ -595,7 +595,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .overlay h1 {
@@ -626,7 +626,6 @@ header {
   font-size: 20px;
   font-weight: 400;
   color: white;
-  background-color: #926fb1;
   border: none;
   border-radius: 3px;
 }
@@ -639,57 +638,52 @@ header {
   padding-left: 10px;
 }
 
-.dot-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 5vh;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+.slide-1 button {
+  background-color: #926fb1;
 }
 
-.dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: none;
-  background-color: white;
-  opacity: 0.6;
-  margin: 0 15px;
+.slide-1 button:hover {
+  background-color: #79539a;
 }
 
-.dot:hover {
-  opacity: 0.4;
+.slide-2 button {
+  background-color: #4183d7;
 }
 
-.active-dot {
-  opacity: 1;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: none;
-  background-color: white;
+.slide-2 button:hover {
+  background-color: #286abd;
 }
 
-.active-dot-ring {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 3px solid white;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  align-items: center;
-  margin: 0 6px;
+.slide-3 button {
+  background-color: #d64541;
+}
+
+.slide-3 button:hover {
+  background-color: #bc2c28;
+}
+
+.slide-4 button {
+  background-color: #67809f;
+}
+
+.slide-4 button:hover {
+  background-color: #526781;
+}
+
+.slide-5 button {
+  background-color: #2ecc71;
+}
+
+.slide-5 button:hover {
+  background-color: #25a25a;
+}
+
+.slide-6 button {
+  background-color: #f62459;
+}
+
+.slide-6 button:hover {
+  background-color: #de093f;
 }
 
 @media (max-width: 767px) {

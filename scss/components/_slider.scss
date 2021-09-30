@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .overlay h1 {
@@ -61,7 +61,6 @@
   font-size: 20px;
   font-weight: 400;
   color: white;
-  background-color: variables.$web-design;
   border: none;
   border-radius: 3px;
 }
@@ -74,48 +73,93 @@
   padding-left: 10px;
 }
 
+.slide-1 button {
+  background-color: variables.$web-design;
+}
+.slide-1 button:hover {
+  background-color: variables.$web-design-hover;
+}
+
+.slide-2 button {
+  background-color: variables.$it-support;
+}
+.slide-2 button:hover {
+  background-color: variables.$it-support-hover;
+}
+
+.slide-3 button {
+  background-color: variables.$telecoms-services;
+}
+.slide-3 button:hover {
+  background-color: variables.$telecoms-services-hover;
+}
+
+.slide-4 button {
+  background-color: variables.$bespoke-software;
+}
+.slide-4 button:hover {
+  background-color: variables.$bespoke-software-hover;
+}
+
+.slide-5 button {
+  background-color: variables.$digital-marketing;
+}
+.slide-5 button:hover {
+  background-color: variables.$digital-marketing-hover;
+}
+
+.slide-6 button {
+  background-color: variables.$cyber-security;
+}
+.slide-6 button:hover {
+  background-color: variables.$cyber-security-hover;
+}
+
+
+
+
 // Line of dots indicating which slide user is on ----------------------------
-.dot-line {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5vh;
-  transform: scale(.7);
-}
-
-.dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: none;
-  background-color: white;
-  opacity: 0.6;
-  margin: 0 15px;
-}
-
-.dot:hover {
-  opacity: .4;
-}
-
-.active-dot {
-  opacity: 1;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: none;
-  background-color: white;
-}
-
-.active-dot-ring {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid white;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  align-items: center;
-  margin: 0 6px;
-}
+// .dot-line {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 5vh;
+//   transform: scale(.7);
+// }
+//
+// .dot {
+//   width: 15px;
+//   height: 15px;
+//   border-radius: 50%;
+//   border: none;
+//   background-color: white;
+//   opacity: 0.6;
+//   margin: 0 15px;
+// }
+//
+// .dot:hover {
+//   opacity: .4;
+// }
+//
+// .active-dot {
+//   opacity: 1;
+//   width: 15px;
+//   height: 15px;
+//   border-radius: 50%;
+//   border: none;
+//   background-color: white;
+// }
+//
+// .active-dot-ring {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border: 3px solid white;
+//   border-radius: 50%;
+//   width: 28px;
+//   height: 28px;
+//   align-items: center;
+//   margin: 0 6px;
+// }
 
 
 
