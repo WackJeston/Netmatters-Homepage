@@ -1,0 +1,80 @@
+//---------------------------------------
+//  Header
+//---------------------------------------
+
+@use "utilities/variables";
+
+.pop-up-menu {
+  position: fixed;
+  right: -260px;
+  background-color: variables.$primary-color;
+  width: 260px;
+  z-index: 10;
+  padding: 20px;
+}
+
+.pop-up-menu a, .pop-up-menu h3, .pop-up-menu h6 {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.pop-up-menu h6 {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.pop-up-menu h3 {
+  font-size: 18px;
+}
+
+.pop-up-menu a {
+  font-size: 16px;
+}
+
+.pop-up-menu i {
+  margin-bottom: 15px;
+}
+
+.pop-up-menu .mobile-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-up-menu .pop-up-tile, .pop-up-menu .pop-up-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.pop-up-menu .pop-up-tile {
+  background-color: variables.$primary-color;
+  border: 1px solid variables.$secondary-color-clear;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 0 1px 1px variables.$background-color-3;
+}
+
+.pop-up-menu .pop-up-list {
+  background-color: variables.$primary-color-hover;
+  border-radius: 3px;
+}
+
+.pop-up-menu a {
+  margin: 10px;
+}
+
+.pop-up-menu a:hover {
+  color: white;
+}
+
+.pop-up-menu .pop-up-line {
+  height: 1px;
+  width: 100%;
+  background-color: variables.$primary-color-dark;
+  box-shadow: 0 1px 0 0 variables.$off-white-clear;
+}

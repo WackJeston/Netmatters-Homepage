@@ -11,8 +11,10 @@ header {
   padding: 10px 15px 0 15px;
   background-color: white;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0,0,0,0.1);
+  // position: fixed;
+  transition: all 300ms ease-in-out;
 }
 
 .nav-top {
@@ -25,6 +27,18 @@ header {
   margin: 0 15px;
   padding-bottom: 10px;
 }
+
+
+// Sticky Header CSS ---------------------------
+.scroll-down header {
+  transform: translate35(0, -100%, 0);
+  border-bottom: 5px solid blue;
+}
+
+.scroll-up header {
+  border-bottom: 5px solid orange;
+}
+
 
 // Logo and phone icon -------------------
 
@@ -222,22 +236,6 @@ header {
   text-decoration: none;
 }
 
-// .nav-large-line-1 {
-//   display: flex;
-//   flex-grow: 1;
-//   width: 1px;
-//   height: 100%;
-//   background-color: variables.$primary-border-color;
-// }
-//
-// .nav-large-line-2 {
-//   display: flex;
-//   flex-grow: 1;
-//   width: 2%;
-//   height: 100%;
-//   background-color: black;
-// }
-
 .menu-item h6,
 .menu-item h3 {
   color: white;
@@ -258,35 +256,7 @@ header {
 }
 
 
-// Large Nav colors ----------------------------
-
-.nav-web i {
-  color: variables.$web-design;
-}
-
-.nav-it i {
-  color: variables.$it-support;
-}
-
-.nav-telecoms i {
-  color: variables.$telecoms-services;
-}
-
-.nav-software i {
-  color: variables.$bespoke-software;
-}
-
-.nav-marketing i {
-  color: variables.$digital-marketing;
-}
-
-.nav-security i {
-  color: variables.$cyber-security;
-}
-
-
 // Large Nav hover colors --------------------
-
 .web-container:hover .nav-web,
 .web-container:hover .nav-web i {
   background-color: variables.$web-design;
@@ -391,6 +361,7 @@ header {
 .item-container:hover .sub-menu {
   display: flex;
 }
+
 
 
 

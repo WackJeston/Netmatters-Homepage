@@ -9,7 +9,7 @@ body {
   font-size: 1rem;
   letter-spacing: .4px;
   color: #666;
-  height: 100%;
+  width: 100%;
   background-color: #fff;
 }
 
@@ -29,4 +29,28 @@ body {
 .line {
   width: 30px;
   height: 3.5px;
+}
+
+.fa-code {
+  color: variables.$web-design;
+}
+
+.fa-desktop {
+  color: variables.$it-support;
+}
+
+.fa-phone-alt {
+  color: variables.$telecoms-services;
+}
+
+.fa-th {
+  color: variables.$bespoke-software;
+}
+
+.fa-chart-bar {
+  color: variables.$digital-marketing;
+}
+
+.fa-shield-alt {
+  color: variables.$cyber-security;
 }
