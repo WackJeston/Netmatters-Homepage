@@ -6,6 +6,15 @@ body {
   color: #666;
   width: 100%;
   background-color: #fff;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-container {
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .read-more {
@@ -568,11 +577,12 @@ header {
 }
 .pop-up-menu {
   position: fixed;
+  overflow-y: scroll;
+  height: 100vh;
   right: -260px;
   background-color: #333645;
   width: 260px;
   z-index: 10;
-  padding: 20px;
 }
 
 .pop-up-menu a, .pop-up-menu h3, .pop-up-menu h6 {
@@ -592,12 +602,17 @@ header {
   font-size: 18px;
 }
 
-.pop-up-menu a {
-  font-size: 16px;
+.pop-up-menu a:hover {
+  color: white;
 }
 
-.pop-up-menu i {
-  margin-bottom: 15px;
+.pop-up-menu .pop-up-line {
+  height: 1px;
+  width: 100%;
+  background-color: #181920;
+  -webkit-box-shadow: 0 1px 0 0 rgba(169, 169, 169, 0.15);
+          box-shadow: 0 1px 0 0 rgba(169, 169, 169, 0.15);
+  z-index: 20;
 }
 
 .pop-up-menu .mobile-section {
@@ -608,6 +623,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 20px;
 }
 
 .pop-up-menu .pop-up-tile, .pop-up-menu .pop-up-list {
@@ -627,8 +643,9 @@ header {
 
 .pop-up-menu .pop-up-tile {
   background-color: #333645;
-  border: 1px solid rgba(128, 128, 128, 0.4);
+  border: 1px solid rgba(128, 128, 128, 0.3);
   border-radius: 4px;
+  width: 100%;
   padding: 20px;
   -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -639,22 +656,80 @@ header {
   border-radius: 3px;
 }
 
-.pop-up-menu a {
+.pop-up-menu .pop-up-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pop-up-menu .pop-up-container:hover .pop-up-tile {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.pop-up-menu .mobile-section a {
+  font-size: 15px;
   margin: 10px;
+  text-align: center;
 }
 
-.pop-up-menu a:hover {
-  color: white;
+.pop-up-menu .mobile-section i {
+  margin-bottom: 15px;
 }
 
-.pop-up-menu .pop-up-line {
-  height: 1px;
-  width: 100%;
-  background-color: #181920;
-  -webkit-box-shadow: 0 1px 0 0 rgba(250, 249, 246, 0.05);
-          box-shadow: 0 1px 0 0 rgba(250, 249, 246, 0.05);
+.pop-up-menu .last-list {
+  margin-bottom: 0;
 }
 
+.pop-up-menu .main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pop-up-menu .pop-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pop-up-menu .pop-title {
+  font-size: 16px;
+  padding: 20px;
+}
+
+.pop-up-menu .pop-item {
+  font-size: 13px;
+  padding: 20px;
+}
+
+.pop-up-menu .main-section i {
+  margin-right: 15px;
+  font-size: 10px;
+  position: relative;
+  bottom: 2px;
+}
+
+.pop-up-menu .pop-item {
+  background-color: #22242e;
+}
+
+@media (min-width: 992px) {
+  .pop-up-menu .mobile-section {
+    display: none;
+  }
+}
 .slick {
   width: 92%;
 }
@@ -908,6 +983,10 @@ header {
   color: white;
 }
 
+.icon i {
+  color: white;
+}
+
 .services .line {
   background-color: #333645;
   margin: 5px 0;
@@ -919,6 +998,7 @@ header {
 }
 
 .bespoke-software:hover .icon,
+.bespoke-software:hover i,
 .bespoke-software:hover .read-more,
 .bespoke-software:hover .line {
   background-color: white;
@@ -936,6 +1016,7 @@ header {
 }
 
 .it-support:hover .icon,
+.it-support:hover i,
 .it-support:hover .read-more,
 .it-support:hover .line {
   background-color: white;
@@ -953,6 +1034,7 @@ header {
 }
 
 .digital-marketing:hover .icon,
+.digital-marketing:hover i,
 .digital-marketing:hover .read-more,
 .digital-marketing:hover .line {
   background-color: white;
@@ -970,6 +1052,7 @@ header {
 }
 
 .telecoms-services:hover .icon,
+.telecoms-services:hover i,
 .telecoms-services:hover .read-more,
 .telecoms-services:hover .line {
   background-color: white;
@@ -987,6 +1070,7 @@ header {
 }
 
 .web-design:hover .icon,
+.web-design:hover i,
 .web-design:hover .read-more,
 .web-design:hover .line {
   background-color: white;
@@ -1004,6 +1088,7 @@ header {
 }
 
 .cyber-security:hover .icon,
+.cyber-security:hover i,
 .cyber-security:hover .read-more,
 .cyber-security:hover .line {
   background-color: white;
@@ -1021,6 +1106,7 @@ header {
 }
 
 .developer-training:hover .icon,
+.developer-training:hover i,
 .developer-training:hover .read-more,
 .developer-training:hover .line {
   background-color: white;

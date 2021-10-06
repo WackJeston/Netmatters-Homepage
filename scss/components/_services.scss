@@ -68,6 +68,10 @@
   color: white;
 }
 
+.icon i {
+  color: white;
+}
+
 .services .line {
   background-color: variables.$primary-color;
   margin: 5px 0;
@@ -82,6 +86,7 @@
 }
 
 .bespoke-software:hover .icon,
+.bespoke-software:hover i,
 .bespoke-software:hover .read-more,
 .bespoke-software:hover .line {
   background-color: white;
@@ -102,6 +107,7 @@
 }
 
 .it-support:hover .icon,
+.it-support:hover i,
 .it-support:hover .read-more,
 .it-support:hover .line {
   background-color: white;
@@ -122,6 +128,7 @@
 }
 
 .digital-marketing:hover .icon,
+.digital-marketing:hover i,
 .digital-marketing:hover .read-more,
 .digital-marketing:hover .line {
   background-color: white;
@@ -142,6 +149,7 @@
 }
 
 .telecoms-services:hover .icon,
+.telecoms-services:hover i,
 .telecoms-services:hover .read-more,
 .telecoms-services:hover .line {
   background-color: white;
@@ -162,6 +170,7 @@
 }
 
 .web-design:hover .icon,
+.web-design:hover i,
 .web-design:hover .read-more,
 .web-design:hover .line {
   background-color: white;
@@ -182,6 +191,7 @@
 }
 
 .cyber-security:hover .icon,
+.cyber-security:hover i,
 .cyber-security:hover .read-more,
 .cyber-security:hover .line {
   background-color: white;
@@ -202,6 +212,7 @@
 }
 
 .developer-training:hover .icon,
+.developer-training:hover i,
 .developer-training:hover .read-more,
 .developer-training:hover .line {
   background-color: white;
