@@ -1,0 +1,58 @@
+//---------------------------------------
+//  Cookies Pop Up
+//---------------------------------------
+
+@use "utilities/variables";
+
+.cookie-container {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100vh;
+  background-color: variables.$background-color-3;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cookie-pop-up {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.cookie-pop-up div {
+  padding: 20px;
+}
+
+.cookie-div {
+  border-bottom: 1px solid variables.$secondary-color-clear;
+}
+
+.cookie-pop-up div h3 {
+  margin-bottom: 0;
+}
+
+.cookie-pop-up div p {
+  color: variables.$primary-border-color-2;
+  line-height: 2rem;
+}
+
+.cookie-pop-up .cookie-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cookie-pop-up button {
+  width: 100%;
+}
+
+.cookie-pop-up .cookie-cs {
+  margin-bottom: 30px;
+}
