@@ -31,17 +31,19 @@
   <body>
     <!-- Cookie Pop Up ------------------------------------------->
     <div class="cookie-container">
-      <div class="cookie-pop-up">
-        <div class="cookie-title cookie-div">
-          <h3>Cookies Policy</h3>
-        </div>
-        <div class="cookie-main cookie-div">
-          <p>We use cookies to obtain aggregate data regarding site traffic and interaction, in order to identify user trends and obtain insights in order to continually improve our site. These cookies enable us to improve your customer experience as you use our site and help provide you with relevant online marketing.</p>
-          <p>You can see a list of the other companies who use cookies on this website, by visiting cookie settings at the bottom of each page. For full details of how we use your personal information, and your rights in relation to it, view our privacy policy.</p>
-        </div>
-        <div class="cookie-buttons">
-          <button type="button" name="change-settings" class="cookie-cs">change settings</button>
-          <button type="button" name="accept-cookies" class="cookie-ac">accept cookies</button>
+      <div class="cookie-positioner">
+        <div class="cookie-pop-up">
+          <div class="cookie-title cookie-div">
+            <h3>Cookies Policy</h3>
+          </div>
+          <div class="cookie-main cookie-div">
+            <p>We use cookies to obtain aggregate data regarding site traffic and interaction, in order to identify user trends and obtain insights in order to continually improve our site. These cookies enable us to improve your customer experience as you use our site and help provide you with relevant online marketing.</p>
+            <p>You can see a list of the other companies who use cookies on this website, by visiting cookie settings at the bottom of each page. For full details of how we use your personal information, and your rights in relation to it, view our privacy policy.</p>
+          </div>
+          <div class="cookie-buttons">
+            <button type="button" name="change-settings" class="cookie-cs">change settings</button>
+            <button type="button" name="accept-cookies" class="cookie-ac">accept cookies</button>
+          </div>
         </div>
       </div>
     </div>
@@ -50,15 +52,15 @@
     <div class="pop-up-menu">
       <div class="mobile-section">
         <div class="pop-up-container">
-          <button class="pop-up-tile"><h3>CONTACT US</h3></button>
+          <div class="pop-up-tile"><h3>CONTACT US</h3></div>
         </div>
         <!-- Web Design ------->
         <div class="pop-up-container">
-          <button class="pop-up-tile">
+          <div class="pop-up-tile">
             <i class="fas fa-code fa-lg"></i>
             <h6>web</h6>
             <h3>design</h3>
-          </button>
+          </div>
           <div class="pop-up-list">
             <a href="#">stylish websites</a>
             <div class="pop-up-line"></div>
@@ -75,11 +77,11 @@
         </div>
         <!-- IT Services ------->
         <div class="pop-up-container">
-          <button class="pop-up-tile">
+          <div class="pop-up-tile">
             <i class="fas fa-desktop fa-lg"></i>
             <h6>it</h6>
             <h3>services</h3>
-          </button>
+          </div>
           <div class="pop-up-list">
             <a href="#">managed it</a>
             <div class="pop-up-line"></div>
@@ -96,11 +98,11 @@
         </div>
         <!-- Telecoms Services ------->
         <div class="pop-up-container">
-          <button class="pop-up-tile">
+          <div class="pop-up-tile">
             <i class="fas fa-phone-alt fa-lg"></i>
             <h6>telecoms</h6>
             <h3>services</h3>
-          </button>
+          </div>
           <div class="pop-up-list">
             <a href="#">gigabit voucher</a>
             <div class="pop-up-line"></div>
@@ -117,11 +119,11 @@
         </div>
         <!-- Bespoke Software ------->
         <div class="pop-up-container">
-          <button class="pop-up-tile">
+          <div class="pop-up-tile">
             <i class="fas fa-th fa-lg"></i>
             <h6>bespoke</h6>
             <h3>software</h3>
-          </button>
+          </div>
           <div class="pop-up-list">
             <a href="#">workflow</a>
             <div class="pop-up-line"></div>
@@ -138,11 +140,11 @@
         </div>
         <!-- Digital Marketing ------->
         <div class="pop-up-container">
-          <button class="pop-up-tile">
+          <div class="pop-up-tile">
             <i class="fas fa-chart-bar fa-lg"></i>
             <h6>digital</h6>
             <h3>marketing</h3>
-          </button>
+          </div>
           <div class="pop-up-list">
             <a href="#">search (seo)</a>
             <div class="pop-up-line"></div>
@@ -159,11 +161,11 @@
         </div>
         <!-- Cyber Security ------->
         <div class="pop-up-container">
-          <button class="pop-up-tile">
+          <div class="pop-up-tile">
             <i class="fas fa-shield-alt fa-lg"></i>
             <h6>cyber</h6>
             <h3>security</h3>
-          </button>
+          </div>
           <div class="pop-up-list last-list">
             <a href="#">assessment</a>
             <div class="pop-up-line"></div>
@@ -277,7 +279,7 @@
         <!-- Navigation Bottom Row ------------------------------------>
         <div class="nav-bot">
           <input type="text" name="search" placeholder="Search...">
-          <i class="fas fa-search fa-lg search"></i>
+          <i class="fas fa-search fa-lg"></i>
         </div>
 
 
@@ -860,14 +862,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Slick JS ------------------>
-    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/slick-callback.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick-callback.js"></script>
 
     <!-- Sticky Header JS ------------>
-    <script type="text/javascript" src="js/sticky-header.js"></script>
+    <script src="js/sticky-header.js"></script>
 
     <!-- Pop Up Menu JS ------------>
-    <script type="text/javascript" src="js/pop-up-menu.js"></script>
+    <script src="js/pop-up-menu.js"></script>
+
+    <!-- Cookie Pop Up JS ------------>
+    <!-- <script src="js/cookie-pop-up.js"></script> -->
 
   </body>
 </html>
