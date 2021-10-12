@@ -7,7 +7,7 @@ const line3 = document.querySelector("#line-3")
 let activeMenu = false
 
 
-menuButton.addEventListener("click", () => {
+menuButton.addEventListener("click", function() {
   if (activeMenu === false) {
     body.classList.remove("menu-non-active")
     body.classList.add("menu-active")

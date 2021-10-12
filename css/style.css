@@ -1119,6 +1119,59 @@ header {
   background-color: #7e57a0;
 }
 
+.cookie-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  z-index: 1010;
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+}
+
+.cookie-settings div {
+  margin-bottom: 20px;
+}
+
+.cookie-settings h2, .cookie-settings h3, .cookie-settings h6 {
+  color: #333645;
+}
+
+.cookie-settings h2 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+
+.cookie-settings h3 {
+  font-size: 1.62rem;
+  font-weight: 400;
+  margin: 5px 0 15px 0;
+}
+
+.cookie-settings h6 {
+  font-weight: 700;
+}
+
+.cookie-settings p {
+  color: #646464;
+  font-size: 0.875rem;
+  line-height: 0.97rem;
+  margin-bottom: 8px;
+}
+
+.cookie-settings ul {
+  color: #646464;
+  font-size: 0.88rem;
+  margin: 12px 7px;
+}
+
 @media (min-width: 767px) {
   .cookie-pop-up {
     max-width: 600px;
