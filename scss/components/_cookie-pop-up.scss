@@ -6,7 +6,7 @@
 
 // Main Pop Up ----------------------
 .cookie-container {
-  // display: none;
+  display: none;
   position: fixed;
   overflow-y: auto;
   width: 100%;
@@ -88,7 +88,7 @@
 
 // Advanced Settings ----------------------
 .cookie-settings {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: white;
   position: absolute;
