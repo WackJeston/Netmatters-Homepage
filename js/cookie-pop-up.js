@@ -8,6 +8,7 @@ const accept = document.querySelector(".accept-cs")
 $(document).ready(function() {
   let counter = localStorage.getItem('counter');
   if (counter == null) {
+    console.log("Setting Cookie Local Storage to 1")
     localStorage.setItem('counter', 1);
     container.style.display = "block"
   }

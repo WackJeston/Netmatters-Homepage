@@ -1,3 +1,4 @@
+const body = document.body;
 const menuButton = document.querySelector(".menu-but")
 const page = document.querySelector(".page-container")
 const pageCover = document.querySelector(".page-cover")
