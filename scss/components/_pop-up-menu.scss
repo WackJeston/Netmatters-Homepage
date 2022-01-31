@@ -31,6 +31,10 @@
   font-size: 18px;
 }
 
+.pop-up-menu .contact-us {
+  align-self: center;
+}
+
 .pop-up-menu a:hover {
   color: white;
 }
@@ -81,7 +85,7 @@
   background-color: variables.$secondary-color-clear;
 }
 
-.pop-up-menu .mobile-section a {
+.pop-up-menu .pop-up-list a {
   font-size: 15px;
   margin: 10px;
   text-align: center;

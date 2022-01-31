@@ -17,6 +17,10 @@ header {
   transition: all 300ms ease-in-out;
 }
 
+header a {
+  text-decoration: none;
+}
+
 .nav-top {
   display: flex;
   align-items: center;
@@ -43,11 +47,14 @@ header {
 // Logo and phone icon -------------------
 
 .logo {
-  margin-right: 35px;
-  max-width: 345px;
-  min-width: 50px;
+  display: flex;
   margin-right: auto;
   cursor: pointer;
+}
+
+.logo img {
+  max-width: 345px;
+  min-width: 50px;
 }
 
 .phone {
@@ -111,18 +118,21 @@ header {
 }
 
 .nav-bot input {
-  flex: auto;
+  flex-grow: 1;
   padding-left: 20px;
-  color: white;
+  color: variables.$primary-color;
   border: none;
   background: none;
 }
 
+.nav-bot input:focus {
+  outline: none;
+}
+
 .nav-bot i {
   align-self: center;
-  padding-bottom: 3px;
   color: variables.$primary-color;
-  margin-right: 5px;
+  padding: 10px;
 }
 
 
@@ -190,11 +200,12 @@ header {
   background-color: variables.$support-hover;
 }
 
-.contact {
+.contact button {
   background-color: variables.$contact;
+  height: 60px;
 }
 
-.contact:hover {
+.contact button:hover {
   background-color: variables.$contact-hover;
 }
 
@@ -208,6 +219,7 @@ header {
   width: 97vw;
   box-shadow: 20px 0 0 0 #333645, -20px 0 0 0 #333645, 20px 1px 0 0 gray, -20px 1px 0 0 gray;
   background-color: #333645;
+  z-index: 101;
 }
 
 .nav-large {

@@ -1,0 +1,203 @@
+@use "utilities/variables";
+
+.offices-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: variables.$primary-background-color;
+}
+
+.offices-section .file-view {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  background-color: white;
+  border-top: 1px solid black;
+  width: 100%;
+  height: 40px;
+  box-shadow: 0 0 0.4rem 0.1rem rgba(0,0,0,0.1);
+}
+
+.file-view h4 {
+  position: relative;
+  top: 4px;
+  font-size: 12px;
+  width: 720px;
+}
+
+.file-view a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.file-view a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.offices-section .offices-title-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 85px;
+  background-color: variables.$primary-color;
+  color: white;
+  padding: 8px 15px 0px 15px;
+}
+
+.offices-section .offices-title-desktop {
+  position: relative;
+  top: 55px;
+  display: none;
+  width: 940px;
+  color: variables.$dark-blue;
+}
+
+.offices-section h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.offices-section .offices-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15px 0 15px;
+}
+
+.offices-section .office {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: solid 1px variables.$secondary-color-clear;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 0 0.4rem 0.1rem rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.offices-section .o-map {
+  height: 300px;
+  background-color: lightBlue;
+  border-radius: 0 0 2px 2px;
+}
+
+#map1, #map2 {
+  margin-bottom: 30px;
+}
+
+.offices-section img {
+  width: 100%;
+}
+
+.offices-section .o-info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 20px 30px;
+}
+
+.offices-section .o-title {
+  text-decoration: none;
+  color: variables.$primary-color-dark;
+  font-size: 18px;
+}
+
+.offices-section p {
+  font-size: 13px;
+  color: variables.$secondary-color;
+  line-height: 22px;
+}
+
+.offices-section p, .offices-section a {
+  margin-bottom: 12px;
+}
+
+.offices-section .o-phone {
+  font-size: 26px;
+  font-weight: 700;
+  color: variables.$web-design;
+  text-decoration: none
+}
+
+.offices-section .o-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 45px;
+  border-radius: 3px;
+  color: white;
+  background-color: variables.$web-design;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.gradient {
+  height: 40px;
+  background-image: linear-gradient(to top, white, variables.$primary-background-color);
+}
+
+
+
+// Media Queries -----------------
+@media (min-width:767px) {
+  .offices-section .file-view {
+    display: flex;
+  }
+
+  .offices-section .offices-title-mobile {
+    align-items: center;
+  }
+
+  .offices-title h2, .offices-section .o-container {
+    width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .offices-section .offices-title-mobile {
+    display: none;
+  }
+
+  .offices-section .offices-title-desktop {
+    display: flex;
+  }
+
+  .file-view h4 {
+    width: 940px;
+  }
+
+  .offices-section .offices-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    padding: 70px 0 0 0;
+  }
+
+  .offices-container .o-container {
+    width: 293px;
+  }
+}
+
+@media (min-width:1261px) {
+  .file-view h4 {
+    width: 1170px;
+  }
+
+  .offices-section .offices-title-desktop {
+    width: 1170px;
+  }
+
+  .offices-section .offices-container {
+    width: 1170px;
+  }
+
+  .offices-container .o-container {
+    width: 370px;
+  }
+}

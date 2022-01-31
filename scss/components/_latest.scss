@@ -230,16 +230,40 @@
   background-color: variables.$news-2-hover;
 }
 
-.careers .sticker {
+.latest .sticker-blue {
   background-color: variables.$careers;
 }
 
-.news-1 .sticker {
+.content .sticker-blue:hover {
+  background-color: variables.$careers-hover;
+}
+
+.latest .sticker-purple {
   background-color: variables.$news-1;
 }
 
-.news-2 .sticker {
+.content .sticker-purple:hover {
+  background-color: variables.$news-1-hover;
+}
+
+.latest .sticker-red {
   background-color: variables.$news-2;
+}
+
+.content .sticker-red:hover {
+  background-color: variables.$news-2-hover;
+}
+
+#sticker-blue {
+  color: variables.$careers;
+}
+
+#sticker-purple {
+  color: variables.$news-1;
+}
+
+#sticker-red {
+  color: variables.$news-2;
 }
 
 
@@ -253,8 +277,14 @@
 @media (max-width:991px)
 and (min-width:768px) {
 
+  .latest {
+    height: 650px;
+    overflow-y: hidden;
+  }
+
   .latest-card {
     width: 345px;
+    margin-bottom: 60px;
   }
 
   .news-2 {
@@ -277,8 +307,14 @@ and (min-width:768px) {
 @media (max-width:1260px)
 and (min-width:992px) {
 
+  .latest {
+    height: 670px;
+    overflow-y: hidden;
+  }
+
   .latest-card {
     width: 455px;
+    margin-bottom: 60px;
   }
 
   .news-2 {
