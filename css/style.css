@@ -64,6 +64,61 @@ body {
   margin-left: 3px;
 }
 
+.green-validation, .red-validation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  padding: 15px;
+  border-radius: 1px;
+  line-height: 0px;
+  margin-bottom: 20px;
+}
+
+.green-validation {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.red-validation {
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid rgba(66, 27, 26, 0.1);
+}
+
+.green-validation p, .red-validation p {
+  position: relative;
+  top: 7px;
+}
+
+.green-validation i {
+  color: #25a35a;
+  cursor: pointer;
+}
+
+.green-validation i:hover {
+  color: #176639;
+}
+
+.red-validation i {
+  color: #c2b2b2;
+  cursor: pointer;
+}
+
+.red-validation i:hover {
+  color: #796f6f;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2469,7 +2524,7 @@ header a {
 }
 
 .form-input-section label,
-.form p {
+.priv-policy p {
   font-size: 16px;
   font-weight: 600;
 }
@@ -3381,7 +3436,7 @@ footer .social {
 .contact-form label, .first-4-inputs label {
   font-size: 16px;
   font-weight: 600;
-  margin: 0px;
+  margin: 0 3px 0 0;
   line-height: 20px;
 }
 

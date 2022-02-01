@@ -67,3 +67,49 @@ body {
   color: variables.$news-2;
   margin-left: 3px;
 }
+
+.green-validation, .red-validation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 15px;
+  border-radius: 1px;
+  line-height: 0px;
+  margin-bottom: 20px;
+}
+
+.green-validation {
+  background-color: variables.$form-submitted;
+  color: white;
+}
+
+.red-validation {
+  background-color: variables.$validation-box;
+  color: variables.$validation-box-text;
+  border: 1px solid variables.$validation-box-border;
+}
+
+.green-validation p, .red-validation p {
+  position: relative;
+  top: 7px;
+}
+
+.green-validation i {
+  color: variables.$form-submitted-x;
+  cursor: pointer;
+}
+
+.green-validation i:hover {
+  color: variables.$form-submitted-x-hover;
+}
+
+.red-validation i {
+  color: variables.$validation-box-x;
+  cursor: pointer;
+}
+
+.red-validation i:hover {
+  color: variables.$validation-box-x-hover;
+}

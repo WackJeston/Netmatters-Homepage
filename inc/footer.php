@@ -1,6 +1,8 @@
         <!-- Newsletter Form ------------------------------>
         <div class="form-container">
-          <div class="form">
+          <form class="form" id="email-signup" action="#email-signup" method="post">
+            <?php include("inc/email-signup.php"); ?>
+
             <h2>Email Newsletter Sign-Up</h2>
             <div class="form-input-section">
 
@@ -8,23 +10,23 @@
                 <div class="input-labels">
                   <label for="name">Your Name</label><label class="star" for="name">*</label>
                 </div>
-                <input type="text" name="user-name" id="name">
+                <input type="text" name="user-name" id="user-name">
               </div>
 
               <div class="form-input">
                 <div class="input-labels">
                   <label for="email">Your Email</label><label class="star" for="email">*</label>
                 </div>
-                <input type="text" name="user-email" id="email">
+                <input type="email" name="user-email" id="user-email">
               </div>
 
             </div>
             <div class="priv-policy">
-              <input type="checkbox" name="checkbox" value="privacy-policy">
+              <input type="checkbox" name="user-marketing" id="user-marketing">
               <p>Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.</p>
             </div>
-            <button type="button" name="subscribe" class="subscribe read-more">subscribe</button>
-          </div>
+            <input type="submit" name="user-submit" class="subscribe read-more" id="user-submit" value="SUBSCRIBE">
+          </form>
         </div>
       </main>
 
@@ -139,6 +141,7 @@
 
     <!-- Form & News Letter Validation JS -->
     <script src="js/form-validation.js"></script>
+    <script src="js/email-signup.js"></script>
 
     <!-- News Section Media Query -->
     <script src="js/news-media-query.js"></script>

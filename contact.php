@@ -88,7 +88,10 @@
         <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
       </div>
     </div>
-    <form class="contact-form" action="inc/form-validation.php" method="contact">
+
+    <form class="contact-form" id="contact-form" action="#contact-form" method="post">
+      <?php include("inc/form-validation.php"); ?>
+
       <div class="first-4-inputs">
         <div class="first-4-inputs-container">
           <div><label for="f-name" class="label-color">Your Name</label><label for="f-name" class="star">*</label></div><br>

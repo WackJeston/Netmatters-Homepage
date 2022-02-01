@@ -14,8 +14,8 @@ let fSubCounter = false
 let fMesCounter = false
 
 // Prevents Reload on Submit
-function handleForm(event) { event.preventDefault(); }
-contactForm.addEventListener('submit', handleForm);
+// function handleForm(event) { event.preventDefault(); }
+// contactForm.addEventListener('submit', handleForm);
 
 // Submit Function
 formSubmit.addEventListener("click", function(){
@@ -24,16 +24,21 @@ formSubmit.addEventListener("click", function(){
   phoneFunction()
   messageFunction()
   subjectFunction()
+
+  // if (fNameCounter == false || fEmailCounter == false || fNumCounter == false || fSubCounter == false || fMesCounter == false){
+  //   function handleForm(event) { event.preventDefault(); }
+  //   contactForm.addEventListener('submit', handleForm);
+  // }
 })
 
 // Name Validation
 function nameFunction(){
   if(formName.value == ""){
     formName.style.border = "1px solid red"
-    let fnameCounter = false
+    fnameCounter = false
   } else {
     formName.style.border = "1px solid #d2d2d2"
-    let fnameCounter = true
+    fnameCounter = true
   }
 }
 
