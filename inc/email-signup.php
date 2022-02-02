@@ -12,7 +12,7 @@ if(isset($_POST['user-submit'])){
     date_default_timezone_set('Europe/London');
     $userDateTime = date('Y/m/d H:i:s', time());
 
-    $userFormQuery = "INSERT INTO contact_form(name, email, marketing, submit_time)
+    $userFormQuery = "INSERT INTO email_signup(name, email, marketing, submit_time)
     VALUES('$userName', '$userEmail', '$userMarketing', '$userDateTime')";
     $userFormResult = mysqli_query($connection, $userFormQuery);
 
