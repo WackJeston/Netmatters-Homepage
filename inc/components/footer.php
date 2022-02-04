@@ -10,14 +10,14 @@
                 <div class="input-labels">
                   <label for="name">Your Name</label><label class="star" for="name">*</label>
                 </div>
-                <input type="text" name="user-name" id="user-name">
+                <input type="text" name="user-name" id="user-name" value="<?php if (isset($_POST['user-name'])) echo $_POST['user-name']; ?>">
               </div>
 
               <div class="form-input">
                 <div class="input-labels">
                   <label for="email">Your Email</label><label class="star" for="email">*</label>
                 </div>
-                <input type="email" name="user-email" id="user-email">
+                <input type="email" name="user-email" id="user-email" value="<?php if (isset($_POST['user-email'])) echo $_POST['user-email']; ?>">
               </div>
 
             </div>
@@ -116,6 +116,11 @@
       </div>
     </div>
 
+    <script type="text/javascript">
+      const homePage = document.querySelector('#home-page')
+      const contactPage = document.querySelector('#contact-page')
+    </script>
+
     <!-- JQuery ------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -142,9 +147,6 @@
     <!-- Form & News Letter Validation JS -->
     <script src="js/form-validation.js"></script>
     <script src="js/email-signup.js"></script>
-
-    <!-- News Section Media Query -->
-    <script src="js/news-media-query.js"></script>
 
   </body>
 </html>

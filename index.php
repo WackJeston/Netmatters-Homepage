@@ -1,5 +1,5 @@
-<?php include("inc/header.php"); ?>
-
+<?php include("inc/components/header.php"); ?>
+      <main id="home-page">
         <!-- Slider --------------------------------------------->
         <!-- <div class="dot-line">
           <div class="active-dot-ring"><button type="button" name="dot" class="active-dot"></button></div>
@@ -260,4 +260,4 @@
           </div>
         </div>
 
-<?php include("inc/footer.php"); ?>
+<?php include("inc/components/footer.php"); ?>

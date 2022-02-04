@@ -4,13 +4,13 @@ if(isset($_POST['user-submit'])){
   error_reporting(0);
   if(!empty($_POST['user-name'])
   && !empty($_POST['user-email'])
-  && !empty($_POST['user-marketing'])){
+  && "on" == ($_POST['user-marketing'])){
 
-    $userName = $_POST['user-name'];
-    $userEmail = $_POST['user-email'];
-    $userMarketing = $_POST['f-marketing'];
+    $userName = mysqli_real_escape_string($connection, $_POST['user-name']);
+    $userEmail = mysqli_real_escape_string($connection, $_POST['user-email']);
+    $userMarketing = mysqli_real_escape_string($connection, $_POST['f-marketing']);
     date_default_timezone_set('Europe/London');
-    $userDateTime = date('Y/m/d H:i:s', time());
+    $userDateTime = mysqli_real_escape_string($connection, date('Y/m/d H:i:s', time()));
 
     $userFormQuery = "INSERT INTO email_signup(name, email, marketing, submit_time)
     VALUES('$userName', '$userEmail', '$userMarketing', '$userDateTime')";
@@ -20,7 +20,7 @@ if(isset($_POST['user-submit'])){
       echo <<<EOT
       <div class="green-validation">
         <p>You have successfully joined our mailing list</p>
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times exit-x"></i>
       </div>
       EOT;
     }
@@ -35,7 +35,7 @@ if(isset($_POST['user-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>The name field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }
@@ -45,7 +45,7 @@ if(isset($_POST['user-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>The email field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }
@@ -55,7 +55,7 @@ if(isset($_POST['user-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>The marketing preference field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }
@@ -65,11 +65,11 @@ if(isset($_POST['user-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>The name field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     <div class="red-validation">
       <p>The email field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }
@@ -79,11 +79,11 @@ if(isset($_POST['user-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>The name field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     <div class="red-validation">
       <p>The marketing preference field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }
@@ -93,11 +93,11 @@ if(isset($_POST['user-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>The email field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     <div class="red-validation">
       <p>The marketing preference field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }
@@ -106,15 +106,15 @@ if(isset($_POST['user-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>The name field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     <div class="red-validation">
       <p>The email field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     <div class="red-validation">
       <p>The marketing preference field is required.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }

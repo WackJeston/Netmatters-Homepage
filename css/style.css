@@ -78,10 +78,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 50px;
-  padding: 15px;
+  padding: 3px 15px;
   border-radius: 1px;
-  line-height: 0px;
   margin-bottom: 20px;
 }
 
@@ -101,9 +99,13 @@ body {
   top: 7px;
 }
 
+.green-validation i, .red-validation i {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .green-validation i {
   color: #25a35a;
-  cursor: pointer;
 }
 
 .green-validation i:hover {
@@ -112,7 +114,6 @@ body {
 
 .red-validation i {
   color: #c2b2b2;
-  cursor: pointer;
 }
 
 .red-validation i:hover {
@@ -184,7 +185,7 @@ header a {
 
 .logo img {
   max-width: 345px;
-  min-width: 50px;
+  min-width: 20px;
 }
 
 .phone {
@@ -551,7 +552,7 @@ header a {
 
 @media (max-width: 600px) {
   .logo {
-    width: 250px;
+    width: 50px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1111,7 +1112,7 @@ header a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 100;
+  z-index: 200;
   font-family: "Poppins", sans-serif;
 }
 
@@ -3382,7 +3383,7 @@ footer .social {
     height: 0px;
   }
   100% {
-    height: 370px;
+    height: 420px;
   }
 }
 
@@ -3391,12 +3392,12 @@ footer .social {
     height: 0px;
   }
   100% {
-    height: 370px;
+    height: 420px;
   }
 }
 @-webkit-keyframes hours-info-disappear {
   0% {
-    height: 370px;
+    height: 420px;
   }
   100% {
     height: 0px;
@@ -3404,7 +3405,7 @@ footer .social {
 }
 @keyframes hours-info-disappear {
   0% {
-    height: 370px;
+    height: 420px;
   }
   100% {
     height: 0px;
@@ -3433,11 +3434,14 @@ footer .social {
           flex-direction: column;
 }
 
+.first-4-inputs .first-4-inputs-container {
+  height: 94px;
+}
+
 .contact-form label, .first-4-inputs label {
   font-size: 16px;
   font-weight: 600;
   margin: 0 3px 0 0;
-  line-height: 20px;
 }
 
 .contact-form .label-color {
@@ -3541,6 +3545,74 @@ footer .social {
   background-color: #79539a;
 }
 
+@media (max-width: 400px) {
+  @-webkit-keyframes hours-info-appear {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 480px;
+    }
+  }
+  @keyframes hours-info-appear {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 480px;
+    }
+  }
+  @-webkit-keyframes hours-info-disappear {
+    0% {
+      height: 480px;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+  @keyframes hours-info-disappear {
+    0% {
+      height: 480px;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+}
+@media (min-width: 550px) {
+  @-webkit-keyframes hours-info-appear {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 370px;
+    }
+  }
+  @keyframes hours-info-appear {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 370px;
+    }
+  }
+  @-webkit-keyframes hours-info-disappear {
+    0% {
+      height: 370px;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+  @keyframes hours-info-disappear {
+    0% {
+      height: 370px;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+}
 @media (min-width: 767px) {
   .form-section .f-container {
     width: 720px;
@@ -3551,7 +3623,7 @@ footer .social {
       height: 0px;
     }
     100% {
-      height: 250px;
+      height: 300px;
     }
   }
 
@@ -3560,12 +3632,12 @@ footer .social {
       height: 0px;
     }
     100% {
-      height: 250px;
+      height: 300px;
     }
   }
   @-webkit-keyframes hours-info-disappear {
     0% {
-      height: 250px;
+      height: 300px;
     }
     100% {
       height: 0px;
@@ -3573,7 +3645,7 @@ footer .social {
   }
   @keyframes hours-info-disappear {
     0% {
-      height: 250px;
+      height: 300px;
     }
     100% {
       height: 0px;
@@ -3590,7 +3662,7 @@ footer .social {
       height: 0px;
     }
     100% {
-      height: 220px;
+      height: 260px;
     }
   }
 
@@ -3599,12 +3671,12 @@ footer .social {
       height: 0px;
     }
     100% {
-      height: 220px;
+      height: 260px;
     }
   }
   @-webkit-keyframes hours-info-disappear {
     0% {
-      height: 220px;
+      height: 260px;
     }
     100% {
       height: 0px;
@@ -3612,7 +3684,7 @@ footer .social {
   }
   @keyframes hours-info-disappear {
     0% {
-      height: 220px;
+      height: 260px;
     }
     100% {
       height: 0px;
@@ -3660,7 +3732,7 @@ footer .social {
       height: 0px;
     }
     100% {
-      height: 370px;
+      height: 420px;
     }
   }
 
@@ -3669,12 +3741,12 @@ footer .social {
       height: 0px;
     }
     100% {
-      height: 370px;
+      height: 420px;
     }
   }
   @-webkit-keyframes hours-info-disappear {
     0% {
-      height: 370px;
+      height: 420px;
     }
     100% {
       height: 0px;
@@ -3682,7 +3754,7 @@ footer .social {
   }
   @keyframes hours-info-disappear {
     0% {
-      height: 370px;
+      height: 420px;
     }
     100% {
       height: 0px;

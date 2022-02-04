@@ -4,15 +4,18 @@ const userEmail = document.querySelector("#user-email")
 const userMarketing = document.querySelector("#user-marketing")
 const userSubmit = document.querySelector("#user-submit")
 
-
 let userNameCounter = false
 let userEmailCounter = false
-let userMarketingCounter = false
 
 userSubmit.addEventListener("click", function(){
   userNameFunction()
   userEmailFunction()
-  userMarketingFunction()
+
+
+  if (userNameCounter == false || userEmailCounter == false){
+    function handleForm(event) { event.preventDefault(); }
+    emailSignup.addEventListener('submit', handleForm);
+  }
 })
 
 // Name Validation
@@ -33,16 +36,6 @@ function userEmailFunction(){
     userEmailCounter = false
   } else {
     userEmail.style.border = "1px solid #d2d2d2"
-    userEmailCounter = true
-  }
-}
-
-function userMarketingFunction(){
-  if (userMarketing.value == ""){
-    userMarketing.style.border = "1px solid red"
-    userEmailCounter = false
-  } else {
-    userMarketing.style.border = "1px solid #d2d2d2"
     userEmailCounter = true
   }
 }

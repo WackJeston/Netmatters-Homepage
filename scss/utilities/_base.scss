@@ -68,15 +68,15 @@ body {
   margin-left: 3px;
 }
 
+// Validation Boxes
 .green-validation, .red-validation {
   display: flex;
   flex-direction: row;
+  // flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  padding: 15px;
+  padding: 3px 15px;
   border-radius: 1px;
-  line-height: 0px;
   margin-bottom: 20px;
 }
 
@@ -96,9 +96,13 @@ body {
   top: 7px;
 }
 
+.green-validation i, .red-validation i {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .green-validation i {
   color: variables.$form-submitted-x;
-  cursor: pointer;
 }
 
 .green-validation i:hover {
@@ -107,7 +111,6 @@ body {
 
 .red-validation i {
   color: variables.$validation-box-x;
-  cursor: pointer;
 }
 
 .red-validation i:hover {

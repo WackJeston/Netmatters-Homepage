@@ -14,15 +14,15 @@ if(isset($_POST['f-submit'])){
   && !empty($_POST['f-subject'])
   && 4 < strlen($_POST['f-message'])){
 
-    $fName = $_POST['f-name'];
-    $fCompName = $_POST['f-comp-name'];
-    $fEmail = $_POST['f-email'];
-    $fPhone = $_POST['f-phone'];
-    $fSubject = $_POST['f-subject'];
-    $fMessage = $_POST['f-message'];
-    $fMarketing = $_POST['f-marketing'];
+    $fName = mysqli_real_escape_string($connection, $_POST['f-name']);
+    $fCompName = mysqli_real_escape_string($connection, $_POST['f-comp-name']);
+    $fEmail = mysqli_real_escape_string($connection, $_POST['f-email']);
+    $fPhone = mysqli_real_escape_string($connection, $_POST['f-phone']);
+    $fSubject = mysqli_real_escape_string($connection, $_POST['f-subject']);
+    $fMessage = mysqli_real_escape_string($connection, $_POST['f-message']);
+    $fMarketing = mysqli_real_escape_string($connection, $_POST['f-marketing']);
     date_default_timezone_set('Europe/London');
-    $fDateTime = date('Y/m/d H:i:s', time());
+    $fDateTime = mysqli_real_escape_string($connection, date('Y/m/d H:i:s', time()));
 
     $contactFormQuery = "INSERT INTO contact_form(name, comp_name, email, phone, subject, message, marketing, submit_time)
     VALUES('$fName', '$fCompName', '$fEmail', '$fPhone', '$fSubject', '$fMessage', '$fMarketing', '$fDateTime')";
@@ -32,7 +32,7 @@ if(isset($_POST['f-submit'])){
       echo <<<EOT
       <div class="green-validation">
         <p>Your message has been sent!</p>
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times exit-x"></i>
       </div>
       EOT;
     }
@@ -49,7 +49,7 @@ if(isset($_POST['f-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>The message must be at least 5 characters.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }
@@ -61,7 +61,7 @@ if(isset($_POST['f-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>validation.phone</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }
@@ -70,11 +70,11 @@ if(isset($_POST['f-submit'])){
     echo <<<EOT
     <div class="red-validation">
       <p>validation.phone</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     <div class="red-validation">
       <p>The message must be at least 5 characters.</p>
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
   }

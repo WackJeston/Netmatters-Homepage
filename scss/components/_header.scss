@@ -54,7 +54,7 @@ header a {
 
 .logo img {
   max-width: 345px;
-  min-width: 50px;
+  min-width: 20px;
 }
 
 .phone {
@@ -389,7 +389,7 @@ header a {
 // Mobiles ------------------------------
 @media (max-width:600px) {
   .logo {
-    width: 250px;
+    width: 50px;
     flex-grow: 1;
   }
 }
