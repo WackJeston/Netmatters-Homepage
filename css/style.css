@@ -3150,6 +3150,10 @@ footer .social {
   margin-bottom: 30px;
 }
 
+.leaflet-touch .leaflet-bar a {
+  border: none;
+}
+
 .offices-section img {
   width: 100%;
 }
@@ -3432,10 +3436,6 @@ footer .social {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.first-4-inputs .first-4-inputs-container {
-  height: 94px;
 }
 
 .contact-form label, .first-4-inputs label {

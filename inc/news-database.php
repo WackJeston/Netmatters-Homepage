@@ -1,9 +1,16 @@
 <?php
 
+// local
+// $dbServername = "localhost";
+// $dbUsername = "root";
+// $dbPassword = "";
+// $dbName = "netmatters_news";
+
+// cPanel
 $dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "netmatters_news";
+$dbUsername = "jackwest_1";
+$dbPassword = "HashBrowns123";
+$dbName = "jackwest_Netmatters-site";
 
 $connection = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 

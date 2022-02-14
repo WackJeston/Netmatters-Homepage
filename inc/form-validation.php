@@ -37,7 +37,12 @@ if(isset($_POST['f-submit'])){
       EOT;
     }
     else {
-      echo "Form Failed To Submit";
+      echo <<<EOT
+      <div class="red-validation">
+        <p>Form failed to submit. Please try again later.</p>
+        <i class="fas fa-times exit-x"></i>
+      </div>
+      EOT;
     }
 
   }
@@ -60,7 +65,7 @@ if(isset($_POST['f-submit'])){
   && 4 < strlen($_POST['f-message'])){
     echo <<<EOT
     <div class="red-validation">
-      <p>validation.phone</p>
+      <p>Please enter a valid phone number.</p>
       <i class="fas fa-times exit-x"></i>
     </div>
     EOT;
@@ -69,7 +74,7 @@ if(isset($_POST['f-submit'])){
     // echo "Please Complete The Required Fields";
     echo <<<EOT
     <div class="red-validation">
-      <p>validation.phone</p>
+      <p>Please enter a valid phone number.</p>
       <i class="fas fa-times exit-x"></i>
     </div>
     <div class="red-validation">

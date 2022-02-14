@@ -94,25 +94,25 @@
 
       <div class="first-4-inputs">
         <div class="first-4-inputs-container">
-          <div><label for="f-name" class="label-color">Your Name</label><label for="f-name" class="star">*</label></div><br>
+          <div><label for="f-name" class="label-color">Your Name</label><label for="f-name" class="star">*</label></div>
           <input type="text" name="f-name" id="f-name" class="f-input" value="<?php if (isset($_POST['f-name'])) echo $_POST['f-name']; ?>">
         </div>
         <div class="first-4-inputs-container">
-          <label for="f-comp-name" class="label-color">Company Name</label><br>
+          <label for="f-comp-name" class="label-color">Company Name</label>
           <input type="text" name="f-comp-name" id="f-comp-name" class="f-input" value="<?php if (isset($_POST['f-comp-name'])) echo $_POST['f-comp-name']; ?>">
         </div>
         <div class="first-4-inputs-container">
-          <div><label for="f-email" class="label-color">Your Email</label><label for="f-email" class="star">*</label></div><br>
+          <div><label for="f-email" class="label-color">Your Email</label><label for="f-email" class="star">*</label></div>
           <input type="email" name="f-email" id="f-email" class="f-input" value="<?php if (isset($_POST['f-email'])) echo $_POST['f-email']; ?>">
         </div>
         <div class="first-4-inputs-container">
-          <div><label for="f-phone" class="label-color">Your Telephone Number</label><label for="f-phone" class="star">*</label></div><br>
+          <div><label for="f-phone" class="label-color">Your Telephone Number</label><label for="f-phone" class="star">*</label></div>
           <input type="text" name="f-phone" id="f-phone" class="f-input" value="<?php if (isset($_POST['f-phone'])) echo $_POST['f-phone']; ?>">
         </div>
       </div>
-      <div><label for="f-subject" class="label-color">Subject</label><label for="f-subject" class="star">*</label></div><br>
+      <div><label for="f-subject" class="label-color">Subject</label><label for="f-subject" class="star">*</label></div>
       <input type="text" name="f-subject" id="f-subject" class="f-input" value="<?php if (isset($_POST['f-subject'])) echo $_POST['f-subject']; ?>">
-      <div><label for="f-message" class="label-color">Message</label><label for="f-message" class="star">*</label></div><br>
+      <div><label for="f-message" class="label-color">Message</label><label for="f-message" class="star">*</label></div>
       <textarea type="text" name="f-message" id="f-message"></textarea>
       <div class="f-tickbox">
         <input type="checkbox" name="f-marketing" id="f-checkbox">
