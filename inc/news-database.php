@@ -7,10 +7,10 @@
 // $dbName = "netmatters_news";
 
 // cPanel
-$dbServername = "localhost";
+$dbServername = "localhost:3306";
 $dbUsername = "jackwest_1";
 $dbPassword = "HashBrowns123";
-$dbName = "jackwest_Netmatters-site";
+$dbName = "jackwest_netmatters-site";
 
 $connection = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
